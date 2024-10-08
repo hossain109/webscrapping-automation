@@ -1,0 +1,908 @@
+Titres H1:
+Comment apprendre Kubernetes (feuille de route complète et ressources)
+Tutoriel sur le cluster EKS Anywhere [Déployer le cluster en 7 étapes]
+
+Titres H2:
+Scripts Shell pour DevOps
+How to Get Started With Shell Scripting?
+What are the Best Free Shell Scripting Learning Resources?
+Real-world Shell Scripting Use Cases
+Shell Scripting Real-Time Scenarios
+Shell Scripting Languages
+Shell Scripting DevOps Interview Questions
+Shell Scripting FAQs
+Conclusion
+Prérequis
+Architecture de configuration
+Créer et créer une image Docker d'application Java
+Deploy Java & MySQL On Kubernetes
+Step 7: Deploy HorizontalPodAutoscaler (HPA)
+Step 8: Access the Java Application
+Step 9: Clean Up
+Conclusion
+Qu'est-ce que la bibliothèque partagée Jenkins ?
+Shared Library Github Repo
+Getting Started With Shared Library
+Creating Shared Library
+Real World Example
+Unit Testing Shared Libraries
+Conclusion
+Sauvegarde Jenkins à l'aide du plugin Thin Backup
+Jenkins Backup Using Disk Snapshots
+Jenkins Manual Backup
+Comment fonctionnent les agents Pod Jenkins Kubernetes ?
+Configuration des pods de build Jenkins sur Kubernetes
+Setting Up Kubernetes Namespace & Service Account
+Jenkins Controller Setup in Kubernetes
+Jenkins Kubernetes Plugin Configuration
+Jenkinsfile With Pod Template
+Multi Container Pod Template
+Using Shared Persistent Volumes With Jenkins Docker Agent Pods
+Building Docker Images On Kubernetes Cluster
+Conclusion
+Types de configuration Jenkins HA
+Configuration de Jenkins HA avec groupe de mise à l'échelle automatique
+HA Setupon Kubernetes
+Horizontal Scaling For Agents
+Jenkins HA Setup
+Prérequis
+Référentielde codes AWS VPC de Terraform
+Workflow de création de Terraform AWS VPC
+Créer un VPC à l'aide de Terraform
+Conclusion
+Configurations de clusters Kubernetes
+Kubelet Configurations
+CoreDNS Configurations
+Audit Logging Configuration
+Kubernetes Configurations Video
+Kubernetes Configurations Involved in Production Setup
+Conclusion
+Qu'est-ce qu'un plugin dans ChatGPT ?
+Comment activer les plugins dans ChatGPT ?
+Comment installer le plugin ChatGPT ?
+Comment utiliser les plugins ChatGPT ?
+Architecture du plug-in ChatGPT
+Conclusion
+À propos des outils CI/CD
+CI/CD pour les applications et l'infrastructure (IaC)
+1. Gestion de la configuration
+2. Gestion secrète
+3. Suivez les principes DRY
+4. Pipelines basés sur Git PR
+5. Considérations relatives au réseau privé
+6. Developer-Centric Workflows:
+7. Develop Pipelines for Team
+8. Leverage Ephemeral Build Agents
+Qu'est-ce que Git ?
+Git pour DevOps
+Git Learning Roadmap
+What are the Best Resources to Learn Git?
+Git DevOps Interview Questions
+Conclusion
+Prérequis pour apprendre Kubernetes
+Découvrir l'architecture Kubernetes
+$1000+ Free Cloud Credits to Deploy Clusters
+Kubernetes Cluster Setup
+Learn About Cluster Configurations
+Understand Kubeconfig File
+Understand Kubernetes Objects And Resources
+Learn About Pod & Associated Resources
+Learn Pod Dependent Objects
+Learn Ingress & Ingress Controllers
+Learn End-to-end Microservices Application Deployment on Kubernetes
+Learn About Securing Kubernetes Cluster
+Learn About Kubernetes Configuration Management Tools
+Learn About Kubernetes Operator Pattern
+Learn Important Kubernetes Configurations
+Learn Kubernetes Best Practices
+The Best Resources to Learn Kubernetes Online
+Kubernetes Learning GitHub Repository
+What is the Best Way to Learn Kubernetes?
+Real-World Kubernetes Case Studies
+Quoi de neuf dans la dernière version de Kubernetes
+Conclusion
+Comment configurer les métriques d'état de Kube sur Kubernetes
+Meilleures certifications Kubernetes pour 2024 [Classement]
+Tutoriel sur l'injecteur de Vault Agent : injecter des secrets dans des pods à l'aide de Vault Agent
+Fichier Kubeconfig expliqué avec des exemples pratiques
+Le cycle de vie des pods Kubernetes expliqué avec des exemples
+Tutoriel sur le cluster EKS Anywhere [Déployer le cluster en 7 étapes]
+Sauvegarde Kubernetes etcd à l'aide d'etcdctl
+Kubernetes etcd Restore Using Snapshot Backup
+etcd Backup FAQs
+Conclusion
+Qu'est-ce que EKS Anywhere ?
+Configuration du cluster de développement EKS Anywhere
+Conclusion
+
+Titres H3:
+How hard is it to learn Linux shell scripting?
+Is scripting required for DevOps Engineers?
+Quel langage de script est le meilleur pour DevOps ?
+Le Shell Scripting est-il utilisé pour l’automatisation ?
+Étape 1 : créer l’application Java
+Étape 2 : créer une image Docker de l'application
+Step 3: Push the image to DockerHub
+Step 1: Create Namespaces
+Step 2: Create Secrets
+Step 3: Create ConfigMap for MySQL
+Step 4: Deploy MySQL Database
+Step 5: Create ConfigMap for Java Application
+Step 6: Deploy Java Application
+1. Delete Java App Deployment
+2. Supprimer MySQL
+3. Supprimer le secret
+4. Supprimer les espaces de noms
+1.vars
+2.src
+3.resources
+Step 1: Create a Shared Library Structure
+Step 2: Create Custom Shared Library Code
+Step 3: Create a Shared Library For Git Checkout
+Step 4: Add Github Shared Library Repo to Jenkins
+Step 5: Use Library in Declarative Pipeline
+Étape 1 : installez le plugin Think Backup.
+Étape 2 : Configuration du plug-in Thinbackup
+Étape 3 : Sauvegarde de la sauvegarde Jenkins
+Step 1: Install Jenkins Kubernetes Plugin
+Step 2:Create a Kubernetes Cloud Configuration
+Step 3: Configure Jenkins Kubernetes Cloud
+Étape 1 : CD dans le référentiel cloné
+Étape 2 : modifier le fichier vpc.tfvars
+Étape 2 : Initialiser Terraform et exécuter le plan
+Étape 3 : Créer un VPC avec Terraform Apply
+Étape 4 : Valider le VPC
+Étape 5 : Nettoyer les ressources
+Manifestes de pod statique
+Configurations du serveur API
+Configurations ETCD
+Certificats TLS
+Kubeconfig Files
+1. Pour avoir des discussions CI/CD significatives avec les développeurs
+2. Pour l'infrastructure en tant que code
+3. Gitops
+1. The official Kubernetes Basics Tutorial
+2. DevOpsCube Kubernetes Tutorials
+3. KillerCoda Interactive Tutorials
+How to take etcd backup in Kubernetes?
+Étape 1 : Installer Docker Desktop
+Étape 2 : installer eksctl-anywhere
+Étape 3 : Générer la configuration du cluster
+Étape 4 : Déployer le cluster
+Étape 5 : Valider le cluster
+Étape 6 : générer et déployer les configurations du connecteur EKS
+Étape 7 : Valider l'enregistrement du cluster EKS Anywhere sur la console EKS
+
+Contenu des Paragraphes:
+Pour les ingénieurs DevOps en herbe, il est essentiel de connaître les scripts shell ou les scripts bash. Dans ceguide sur les scripts shell pour DevOps, je partagerai mes conseils et ressources pour apprendre les scripts shell Linux de la bonne manière.
+J'ai également évoqué l'importance des scripts shell dans monguide de formation des ingénieurs DevOps. Ce guide s'adresse à tous ceux qui souhaitent apprendre les scripts shell de la bonne manière, ce qui peut vous aider dans votre travail quotidien et dans vos entretiens DevOps. Il est très important d'avoir de la patience et de la discipline dans le processus d'apprentissage.
+Si vous êtes quelqu'un qui veut simplement faire avancer les choses, alors Google et Stackoverflow sont plus que suffisants 🙂
+Voici ce que nous allons voir dans ce blog.
+La première question que vous pourriez vous poser est la suivante : quelle est l'importance des scripts Shell pour un ingénieur DevOps ? Cette question m'est venue de débutants comme de professionnels expérimentés de l'informatique.
+La réponse est que c'est très important. L'image suivante montre l'enquête Stackoverflow 2021, où 27 % des répondants ont déclaré utiliser des scripts shell.
+Mais la plupart du temps, on me demande s'il existe de nombreux outils d'automatisation et si nous devons encoreapprendre et écrire des scripts shell. La réponse est oui. Nous ne créons plus de scripts shell pour une automatisation à part entière, mais nous utilisons des scripts avec des outils d'automatisation et pour des tâches ad hoc.
+Par exemple, si vous utilisez l'option de données utilisateur AWS, il est possible que vous utilisiez un script shell à l'intérieur. Un autre exemple est que, lors dela création d'images AMI à l'aide d'un packer, vous finirez par utiliser un script shell pour la configuration AMI. De plus, j'ai eu des cas où j'ai dû utiliserdes scripts shell avec des outils de gestion de configuration,des conteneurs, etc. Nous en parlerons plus en détail dans les sections suivantes.
+Les scripts shell sont également utiles pour les tâches de développement répétitives. Par exemple, il peut s'agir de lancer une machine virtuelle Vagrant avec le logiciel essentiel ou de configurer l'environnement de développement lui-même.
+Most importantly,hands-on scriptingand programming are becoming mandatory in preliminary interview rounds in DevOps interviews. So it is another crucial reason why you should learn shell scripting.
+The prerequisite to getting started with shell scripting is hands-on experience with Linux. Therefore, before getting started with shell scripting, you should becomfortable working with Linux commands.
+If you are totally new to the Linux world, you could start by spinning up a few Linux servers locally usingVagrantor on cloud platforms like AWS, Google Cloud, etc. Every platform offers free credits for beginners. You can check out thefree $100 credit from the digital oceanas well. It’s effortless to get started.
+If you think you are comfortable with Linux, you can get started with Shell scripting basic tutorials. Also, I want you to do the following.
+Create a Github repo, create folders for each concept you learn, and commit all your work scripts. It doesn’t matter if the script is available online. Have your own documentation. You can add references and credit websites/blog links in theREADMEsection. Once your learning is over, you can share it on Linkedin. Trust me; it will help you retain the knowledge and will help others as well.
+You don’t need to pay for any expensive courses to learn Linux shell scripting. There is too much marketing around courses that promises to make you a DevOps Shell scripting ninja. However, I don’t have anything against courses; go for it if you feel comfortable learning via a paid course. I will add those resources as well.
+I have listed down the best free shell scripting resources for you to get started. Go through all the resources once, pick one resource you feel comfortable with, and ensure you go through the material from start to finish. As I said earlier, mastering technology requires patience and discipline.
+Follow the free resources. It has web-based content, web-based interactive tutorials, free courses, and pdf materials.
+But if you say, hey, I am a person who likes guided courses, here are some of my recommendations.
+Assuming you have learned all theshell scripting conceptsand probably written and executed shell scrips for learning purposes. The next question anyone would have is, how to learn real-world shell scripting use cases?
+If you work in a company, you can find project documentation and infrastructure automation codes where existing projects use shell scripts.
+If you don’t have access to project documents and code, here is what you can do.
+Find the GitHub repo of the most common docker base images, For example, the Nginx base image.
+There you will find an entrypoint folder with multiple scripts or anentrypoint.shscript file. Here is annginx example
+Try to understand the shell script and its functionality. In this process, you will figure out many concepts and logic that can be used while writing a shell script. (functions, conditionals, switch cases, and many more)
+It is not just limited to Docker repositories, you can find scripts in many open-source community repositories.
+It is always better to learn with some real-time scenarios in terms of DevOps engineer interviews. So I have come up with some real-world scenarios you can try out. I will keep updating this list.
+Ensure you include the following concepts in the shell scripts you are writing.
+First of all, there are no specific shell scripting languages. When it comes to Shell scripting, it refers tosh, bash, csh, tcsh. Here we are primarily talking about bash shell scripting. Bash is an interpreted scripting language for Unix-based systems.
+Ashell scriptis a computer program designed to be run by the Unix shell, a command-line interpreter.
+But scripting languages, in general, means multiple languages. The following are the common scripting languages.
+Shell scripting DevOps interview questions differ from company to company.
+For example, a Service based company would be just interested in your basic Linux and shell scripting knowledge. However, a product-based company might expect a good level of knowledge of Linux command line and shell scripting.
+Nowadays, most companies would provide platforms like Hackerank to test your scripting skills. So it is necessary to practice shell scripting to solve problems.
+Following are some of the DevOps interview shell script questions.
+I will be updating the list with more generic interview questions soon.
+Following are some of the frequently asked shell scripting questions by aspiring DevOps engineers.
+Learning shell scripting is like learning any other technology. If you have a good foundational knowledge of Linux, you can learn shell scripting easily, provided you follow a disciplined learning path.
+Yes. Scripting knowledge is very essential for a DevOps engineer. For the development environment till production, a DevOps engineer might have to create useful utilities using scripting.
+Cela dépend du projet. Mais Bash, Powershell et Python sont les langages de script couramment utilisés dans les projets basés sur DevOps. Groovy est essentiel si le projet utilise Jenkins.
+Avec l'avènement de nombreux outils DevOps, il n'est plus nécessaire d'écrire une automatisation complète dans des scripts shell. Cependant, les scripts shell sont utilisés dans le cadre de ces outils d'automatisation pour prendre en charge quelques fonctionnalités. Un exemple classique serait l'utilisation de scripts shell avec Hasicorp Packer pour créer des images de machine virtuelle.
+J'espère que vous avez apprécié ce guide sur l'apprentissage des scripts Shell pour les ingénieurs DevOps.
+Maintenant, j’aimerais connaître votre avis : quelle méthode ou ressource du guide d’aujourd’hui allez-vous essayer en premier ?
+Allez-vous commencer par les bases de Linux ? Ou commencer à vous concentrer sur les questions d'entretien
+Faites-le-moi savoir en laissant un commentaire rapide ci-dessous dès maintenant.
+Les entreprises traversent une transformation numérique et depuis des années, la fourniture de logiciels est un véritable défi. Nous constatons de nombreuses frictions et, à cause de cela, de nombreuses entreprises ont essayé d'être agiles, mais tout le monde a adopté l'agilité de manière locale.
+Si vous examinez le cycle de vie total de la manière dont une application passe de la machine d'un développeur jusqu'à un serveur de production, puis jusqu'au client final, l'ensemble de ce flux de travail est tout sauf Agile.
+Depuis de nombreuses années, les organisations s’efforcent d’adopter Agile et de devenir Agile.
+DevOpsest là pour vous aider.
+Carte systématiquesur la façon de réussir avec DevOps
+Vous devez toujours garder à l'esprit que l'automatisationsans interventionest l'objectif, cela ne signifie pas que vous devez déployer directement en production, mais si vous voulez le faire, vous devez pouvoir le faire. Cela devrait être si simple que même un responsable des opérations puisse le faire en appuyant simplement sur un bouton et sans passer parSSHsur plusieurs serveurs.
+DevOps is broken into 4 different blocks,
+En plus des 4 étapes, cela doit passer par tous les environnements comme indiqué sur l'image.
+L’objectif ici devrait être de déplacer l’automatisation de votre organisation aussi loin vers la droite que possible.
+L'automatisation repose sur ces 4 piliers fondamentaux,
+De plus, si vous débutez votre parcours en tant qu’ingénieur DevOps, vous devriez consulter leguide complet pour devenir ingénieur DevOps.
+Dans ce blog, nous examinerons les étapes à suivre pour créer et déployer une application Java avec la base de données MySQL sur le cluster Kubernetes.
+Voici les conditions préalables pour suivre ce guide.
+Le flux de travail de cette configuration est donné dans le diagramme ci-dessous.
+Vous utiliserez concrètement les objets clés de Kubernetes suivants. Cela vous aidera à comprendre comment ces objets peuvent être utilisés dans des implémentations de projets réels :
+Il couvre également des concepts clés tels que :
+Commençons par la configuration.
+Remarque :vous pouvez ignorer cette section si vous souhaitez uniquement tester le déploiement de Kubernetes. Utilisez simplement l'image fournie dans le guide.
+Vous trouverez ci-dessous le guide étape par étape pour créer et déployer des applications Java avec MySQL sur Kubernetes.
+Clonez le dépôt Git ci-dessous, qui contient le code source pour créer l'application. Nous utiliserons l'application Spring Boot de la clinique pour animaux de compagnie, disponible publiquement, pour cette configuration.
+Maintenant, accédez au répertoirespring-petclinicet exécutez la commande ci-dessous pourcréer l'application à l'aide de maven.
+Si vous souhaitez ignorer le test pendant la construction, utilisez l'-DskipTestsindicateur .
+Une fois la construction terminée, vous pouvez trouver le fichier JAR de l'application dans ledossierspring-petclinic/target
+Pourcréer l'image Dockerde l'application, créez un Dockerfile en utilisant le contenu ci-dessous dans le répertoirespring-petclinic.
+Ce dockerfile utilisetechiescamp/jre-17:1.0.0comme image de base celle sur laquelle JRE est installé et il copie le fichier JAR du dossier cible et le colle à l'intérieur de l'image docker dans ledossier/app en tant quejava.jar.
+Il expose également le port 8080, car l'application Java s'exécute sur le port 8080.
+Run the below command from the same directory where theDockerfileis present to build the docker image
+kube-petclinic-app:3.0.0is the name and tag I have given to my docker image.
+Run thedocker imagescommand to check if your docker image has been created successfully.
+Before pushing the image to the DockerHub repository, you have to tag the image that you want to push, use the below to tag the image
+In this commandkube-petclinic-app:3.0.0is the name of the image I build andtechiescamp/kube-petclinic-app:3.0.0is my DockerHub repository and image tag.
+Now, push the image to DockerHub using the command. Before proceeding, ensure you havelogged in to docker hubfrom the CLI.
+Check if your image is pushed into DockerHub as shown below
+Clone the Git repository given below which contains all the YAML manifest we used in this guide under03-java-app-deploymentfolder.
+In the03-java-app-deploymentfolder, you can see the YAML manifests in the below structure.
+Given below are the steps to deploy Java and MySQL on Kubernetes
+We are going to deploy the app and MySQL on two different namespaces so create two new namespacespet-clinic-appandpet-clinic-db.
+Run the following commands to create both namespace
+CD into the03-java-app-deploymentdirectory and run thesecret.ymlin bothpet-clinic-appandpet-clinic-dbnamespaces because the secret contains the MySQL login credentials which are needed in both MySQL and app deployment process.
+Just change the namespace and run thesecret.ymlfile two times to create a secret in bothpet-clinic-appandpet-clinic-dbnamespaces.
+You can see the data in the above block is given in base64-encoded values because the secret won’t be created unless you specify your username and password inbase64-encodedvalues.
+You can use theechocommand withbase64to encode your data, the echo command will give the encoded values of your data. The command to encode your data is given below
+For example, I set myusernameascrunchops, then the echo command will be
+This command will give the encoded values of my data.
+Now, create the secret in both namespaces using the following command.
+Run the following command to verify the secret is created in both namespace
+You will get the following output
+CD into the03-java-app-deployment/mysqldirectory and run theconfigmap.yml.
+This creates a configmapmysql-configmapon thepet-clinic-dbnamespace, that contains the SQL command to create a user, password, and tables on the database, and to insert data on the table.
+It gets the username and password from env variables, which are retrieved from the secret.
+Run the below command to create a configmap.
+Now, run the following command to verify if the ConfigMap is created
+You will get the following output
+CD into the03-java-app-deployment/mysqldirectory and run themysql.yml.
+This file deploys aMySQLstatefulset database on thepet-clinic-dbnamespace and also a nodeport servicemysql-serviceon thepet-clinic-dbnamespace so we can log in to MySQL from outside the cluster.
+It gets the database username and password from the secret you created before.
+Thedocker-entrypoint-initdb.ddirectory is part of the MySQL image. Any MySQL scripts placed in this folder will be executed during MySQL startup. It is primarily used for running database initialization scripts.
+In our setup, we placed an init script (init.sql) in this folder through a ConfigMap (mysql-configmap).init.sqlcreates the username, password, and tables for our application. The script retrieves the username and password from environment variables set by the secret object usingsecretKeyRef
+Run the below command to deploy the MySQL database.
+Now, run the following command to check if the MySQL StatefulSet has been created.
+You will get the following output
+CD into the03-java-app-deployment/java-appfolder and run theconfigmap.yml.
+Run the below command to create a configmap.
+This creates a configmapjava-app-configon thepet-clinic-appnamespace, which contains content of the application.properties file which helps the application to connect with the MySQL database.
+The username and password are given as a variable so that it can get the username and password from the env variables, which are retrieved from the secret.
+Run the following command to check if the configmap is created
+You will get the following output
+This file deploys the Java applicationjava-appon thepet-clinic-appnamespace and also a nodeport servicejava-app-serviceon thepet-clinic-appnamespace so we can access the application on the web browser.
+It gets the database username and password from the secret you created before and theapplication.propertiesfile gets the username and password from theenvduring startup.
+The command is used to run the applicationJARfile along with theapplication.propertiesfile so that the application can access the MySQL database.
+Also, I have added health checks for this application:
+Run the below command to deploy the Java application.
+After deploying the application, run the following command to check if the deployment pods are up and running. It takes minimum 2min for the pods to get ready.
+You will get the following output.
+For HPA to work, you need to have a metrics server running in the cluster.
+If you don’t have a metrics server, you can install theMetrics serverusing the following command.
+Now, run the top command to check if the metrics server is installed properly
+You will get the following output.
+Now, deploy theHorizontalPodAutoscalerin your cluster.
+You can find the belowHPAfile inside the03-java-app-deployment/java-appdirectory.
+This will deploy the HPA in the pet-clinic-app namespace.
+It is configured to scale the target deploymentJava appif the pod’s CPU utilization is 50% and its maximum replica count is3.
+Run the following command to deploy HPA
+Now, run the following command to check if the HPA is deployed
+You will get the following output
+You can see the CPU usage of the target deployment and the number of pods available.
+Once the pod is up and running, check if the application is deployed properly by trying to access it on the browser, search on the browser as{node-IP:nodeport}you will get the following
+It’s important to clean up the setup if it’s no longer needed; run the following commands to clean up the setup.
+Let’s start with deleting the Java application, CD into the03-java-app-deployment/java-appfolder and run the following command
+Cette commande supprimera toutes les ressources créées par les fichiers manifestes dans le répertoire java-app, elle supprime le déploiement de l'application Java, configmap et HPA.
+L'étape suivante consiste à supprimer MySQL, à accéder au dossier03-java-app-deployment/mysqlet à exécuter la commande suivante
+Cette commande supprimera toutes les ressources créées par les fichiers manifestes dans le répertoire mysql, elle supprime le statefulset et le configmap MySQL.
+Pour supprimer le secret dans les deux espaces de noms, accédez audéploiement 03-java-appet exécutez les commandes suivantes
+Modifiez simplement l'espace de noms dans lefichiersecret.yml enpet-clinic-appetpet-clinic-db, puis exécutez la commande suivante deux fois, une fois pour chaque espace de noms.
+Enfin, supprimez les espaces de noms, exécutez la commande suivante pour supprimer les deux espaces de noms
+En résumé, nous avons créé l'application Java de la clinique pour animaux de compagnie à l'aide de Maven, l'avons poussée vers le hub Docker, avons utilisé l'image pour déployer l'application sur Kubernetes et avons configuré une base de données MySQL.
+Je pense que vous trouverez ce blog utile pour comprendre le déploiement d’applications et la configuration de la base de données sur l’application sur Kubernetes.
+Dans ce didacticiel, nous aborderons les concepts essentiels desbibliothèques partagées Jenkinset fournirons un guide pratique pour la création de bibliothèques partagées pour les pipelines.
+Nous vivons à l'ère des microservices, où les applications modernes sont divisées en composants déployables individuellement. Contrairement à une application monolithique, vous pouvez disposer de plusieurs pipelines pour déployer chaque microservice.
+De plus, Jenkins est utilisé pour le développement et le déploiement d'infrastructures en tant que code.
+Avecle pipeline Jenkins en tant que code, nous pouvons coder l'intégralité de notre processus CI/CD. Il est traité de la même manière que nous développons le code d'application. Vous pouvez versionner votre code de pipeline et effectuer tous les niveaux de test avant de l'utiliser pour tout déploiement d'application.
+Cependant, nous pouvons avoir des pipelines réutilisables bien définis en utilisant la bibliothèque partagée Jenkins.
+Lorsque nous parlons de CI/CD en tant que code, il doit être modulaire et réutilisable. Et surtout, il doit suivre lesprincipes DRY(Don't Repeat Yourself). C'est là que la bibliothèque partagée Jenkins entre en jeu.
+Bibliothèque partagée– Comme son nom l’indique, il s’agit d’une bibliothèque qui peut être partagée.
+La bibliothèque partagée Jenkinsest le concept d'avoir un code de pipeline commun dans le système de contrôle de version qui peut être utilisé par n'importe quel nombre de pipelines simplement en le référençant. En fait,plusieurs équipespeuvent utiliser la même bibliothèque pour leurs pipelines.
+Vous pouvez le comparer à labibliothèque de programmation commune. En programmation, nous créons des bibliothèques individuelles qui peuvent être utilisées par n'importe qui en les important simplement dans son code.
+Supposons que vous ayez dix pipelines de microservices Java, l'étape de construction Mavenest dupliquée sur les dix pipelines. Et chaque fois qu'un nouveau service est ajouté, vous devrez copier et coller à nouveau le code du pipeline. Maintenant, disons que vous souhaitez modifier certains paramètres dans l'étape de construction Maven. Vous devrez le modifier manuellement dans tous les pipelines.
+Pouréviter la duplication du code du pipeline, nous pouvons écrire une bibliothèque partagée pour la construction Maven, et dans tous les pipelines, nous devons simplement faire référence au code de la bibliothèque de construction Maven.
+À l'avenir, pour toute modification de build Maven, il vous suffira de mettre à jour le code de la bibliothèque partagée. Les modifications seront ensuite appliquées à tous les pipelines utilisant la bibliothèque de build Maven.
+Dans l’ensemble, la bibliothèque partagée Jenkins répond aux problèmes suivants.
+The Jenkins shared library examples used in this guide are hosted on aGitHub Repository.
+Clone the repository to follow along with the guide.
+A shared library is a collection ofGroovy files (DSLs + Groovy). All the Groovy filesshould be present in a git repo.
+In this example, we will be using Github as our Git repo.
+You can clone this repo to get the basic structure of the shared library.
+The shared library repo has the following folder structure.
+Let’s understand what each folder means.
+This directory holds all theglobal shared library codethat can be called from a Jenkins pipeline. It holds all the library files with a .groovyextension.
+Here is a simple library code for Git checkout.
+Don’t worry about the syntax. We can generate it using the Jenkins pipeline generator. We will look at it practically in the following sections.
+The vars directory also supports.txtfiles for the documentation of shared library code.
+For example, if you have a file namedmaven-build.groovy, you can have a helper file namedmaven-groovy.txt. In this file, you can write the respective shared library function help documentation in markdown format.  The help file can be viewed from<your-jenkins-url>/pipeline-syntax/globalspage.
+It is a regular Java source directory. Here you can add mode complex and object-oriented code Groovy code to extend your shared library code. Also, you canimport core Jenkins and its plugin classesusing an import statement.
+You might ask, when we have a vars directory, what is theneed for src?
+There are scenarios where thegroovy DSLs will not be flexible enoughto achieve some complex functionalities. In this case, you can write custom Groovy functions in src and call them in your shared library code.
+The src directory is added to the classpath during every script compilation. So we candirectly use the classesdefined in thesrcdirectory in Jenkinsfiles.
+All thenon-groovy files(e.g., text files, templates) required for your pipelines can be managed in this folder. Typically files.
+One such example is, you might need a common JSON template to make an API call during the build. This JSON template can be stored in the resources folder and can be accessed in the shared library using thelibraryResourcefunction.
+Or You can use aHTML file as a templatefor sending HTML-formatted email notifications from your Jenkins pipelines. In your pipeline script or shared library function, you can load this template and replace the placeholders with actual values.
+We will look into the following four things to get your hands dirty with the shared library.
+Let’s look at each one in detail.
+Note:In this guide, we will concentrate only on the vars folder for creating your first shared library. The advanced shared library guide will cover src and resources.
+Jenkins shared library has the following structure. You can get the basic structure and code used in this article from Github ->Jenkins Shared Library Structure
+All the files under vars areglobal functions and variables. The file name is the function name. We will be using the filename in our declarative pipeline.
+In this section, we will create the shared library code for Git Checkout functionality.
+You can create the code snippets that can be used in share library function using the Pipeline Syntax Generator available in Jenkins. This will make our life easier for creating custom library DSL. All the supported pipeline functionality can be generated from the snippet generator.
+You can access the syntax generator from your Jenkins on /pipeline-syntax/ path. For example,
+Here is the screenshot, which shows creating a git checkout pipeline snippet using the pipeline syntax generator.
+Here is the properly formatted checkout snippet.
+Let’s convert the checkout snippet we generated in the above step to a shared library.
+Create a file namedgitCheckout.groovyunder vars folder.
+Here is our Git Checkout shared library code. We have removed all the empty checkout parameters that were generated by default.
+Here is the code explanation,
+Commit the changes and push it to your repository.
+Now that we have a basic git checkout library ready, let’s add it to Jenkins configurations.
+Step 1:Go toManage Jenkins –> System
+Step 2:Find theGlobal Trusted Pipeline Librariessection and add your repo details and configurations as shown below.
+We always call the library using the filename undervars. In this case,gitCheckoutis the filename created under vars.
+Here is how we call thegitCheckoutlibrary from the pipeline orJenkinsfile
+As you can see, we are passingbranchandurlparameter to the Checkout function. Here is the full declarative pipeline code.
+LikegitCheckout, you can create all your pipeline steps a shared library and you don’t have to repeat your common functionalities in all your pipelines.
+@Library('jenkins-shared-library@master') _tells Jenkins to use the globally configured library namedjenkins-shared-library.
+When you use this import statement, Jenkins will fetch the shared library code from the configured source (typically a Git repository) and make it available for use in your pipeline.
+In larger enterprises, it is common to have central platform teams.
+If Jenkins is used in such organizations, these platform teams usually create common Jenkins libraries for all application and infrastructure deployment tasks.
+Application teams can reuse these pipelines to save time. Since these libraries are extensible, if the common libraries don’t meet the specific project needs, they can always be customized.
+It is also common practice for teams to contribute to the central platform teams’ shared libraries. This way, organizations can maintain efficient and streamlined pipeline libraries.
+As I have explained in many other blogs, unit testing is important for Infrastructure as code.
+Not every team writes tests, however, unit testing shared libraries isan important best practice in Jenkins pipeline development. It ensures code reliability, catches bugs early, and facilitates safe refactoring.
+By thoroughly testing shared library functions, teams can prevent widespread issues across multiple pipelines, as these libraries often form the backbone of an organization’s CI/CD processes.
+Writing unit test requiresfamiliarity with Java, Groovy and JUnit testing framework. Usually central platform team will have dedicated resources to write these tests for all the shared library functions.
+In essence, although it takes time and effort, unit testing shared libraries is an investment in the stability, maintainability, and efficiency of your entire CI/CD ecosystem.
+If you are using Jenkins for your CI/CD needs, implementing a shared library is a must.
+Il simplifie votre flux de travail CI/CD avec Jenkins. Le meilleur, c'est que vous pouvez disposer d'un flux de travail de développement bien défini pour développer et tester le code du pipeline Jenkins.
+Si vous avez des questions concernant les bibliothèques partagées, faites-le nous savoir dans la section commentaires.
+Il est très important d'avoir une sauvegarde de Jenkins avec ses données et ses configurations. Cela comprend les configurations de tâches, les journaux de builds, les plugins, la configuration des plugins, etc.
+Jenkins nécessite des correctifs et des mises à jour de plugins réguliers. Au cours de ces processus, il existe un risque de problèmes de configuration, qui peuvent potentiellement conduire à un crash de Jenkins.
+Cela peut entraîner une interruption du service Jenkins, il est donc très important de sauvegarder périodiquement les données Jenkins.
+Cet article couvrira les trois manières suivantes de sauvegarderles données et les configurations Jenkins.
+Jenkins Thin Backupest un plugin populaire pour la sauvegarde de Jenkins. Il sauvegarde toutes les données en fonction de votre planning et gère également la conservation des sauvegardes.
+Voici les principales fonctionnalités de ce plugin.
+Commençons par la configuration.
+1. Allez dans Gérer Jenkins -> Gérer les plugins
+2. Cliquez sur l'onglet Disponible et recherchez « Sauvegarde légère »
+3. Installez le plugin et redémarrez Jenkins.
+Une fois le plugin installé, suivez les étapes ci-dessous pour configurer les paramètres de sauvegarde.
+1. Accédez à Gérer Jenkins — > ThinBackup
+2. Cliquez sur l'option Paramètres.
+3. Entrez les options de sauvegarde indiquées ci-dessous et enregistrez-les. Toutes les options sont explicites. Le répertoire de sauvegarde que vous spécifiez doit être accessible en écriture par l'utilisateur exécutant le service Jenkins. Le plugin enregistre la sauvegarde dans le répertoire de sauvegarde que vous spécifiez.
+4. Vous pouvez maintenant tester si la sauvegarde fonctionne en cliquant sur l'Backup Nowoption. Cela créera une sauvegarde des données Jenkins dans le répertoire de sauvegarde que vous avez spécifié dans les paramètres.
+5. Si vous vérifiez le répertoire de sauvegarde sur le serveur, vous pouvez voir la sauvegarde créée. Pour chaque nouvelle sauvegarde, l'horodatage est associé au nom du dossier et l'ancienne sauvegarde est conservée en fonction de la politique de conservation que vous avez mentionnée dans les paramètres.
+Un exemple est présenté ci-dessous.
+Conserver la sauvegarde Jenkins dans Jenkins lui-même n'est pas une bonne idée. Il s'agit d'un point de défaillance unique.
+It is a must tomove thin backups to cloud storageor any other backup location so that even if the Jenkins server crashes, you will have all the data.
+If you are on AWS, Azure, or Google Cloud, you can upload the backup’s respective storage solution using a Linux CronJob
+As you know, Jenkins doesn’t have a database. All the configurations are stored as files in the/var/lib/jenkinsfolder.
+All the modern private and public cloud platforms support the disk snapshot feature.
+If your environment supports disk snapshots, here is what you can do during the initialJenkins installation.
+For some reason, if your Jenkins server crashes or data gets corrupted, create a new disk from the existing snapshot backup and replace it in the Jenkins server. Jenkins will have all the data from the snapshot point in time backup.
+If you are on the AWS cloud, use theEBS snapshot automationfeature to back up the Jenkins data disk.
+Also, if you runJenkins on Kubernetes,you can back up the persistent volume.
+Also, we suggest you use the Thin backup plugin in conjunction with disk snapshots.
+If you don’t have any option using Thinback or disk snapshot, you can go for manual backups.
+First, stop Jenkins to ensure the data is not being written or modified during backup. You can stop Jenkins with the following command:
+Create a tar.gz archive of the Jenkins home directory to ensure all files are preserved
+You can also copy the directory to a backup location:
+You can also automate this process using Linux cron Job.
+
+Dans ce tutoriel Jenkins, j'ai expliqué les étapes détaillées pour configurer le contrôleur Jenkins et mettre à l'échelle les agents de build Jenkins sur les pods Kubernetes à l'aide du plugin Jenkins Kubernetes
+Dans un autre article, j'aiexpliqué comment configurerdes agents Jenkinsbasés sur Docker.
+Si vous disposez d’uncluster Kubernetesdans votre environnement, l’exécution d’agents Jenkins sur les pods Kubernetes vous offrira une bonne isolation de build pour différentes versions d’application.
+De plus, un agent Jenkins éphémère basé sur un pod Kubernetes est un excellent moyen de réduire le coût de l'environnement CI, car les agents Jenkins ne sont lancés qu'en cas de demande de build.
+Avant d’entrer dans la mise en œuvre, comprenons comment fonctionne cette configuration.
+L'image suivante montre le flux de travail de haut niveau.
+Toutes les étapes de build du fichier Jenkins s'exécutent sur ce pod. Une fois la build terminée, le pod sera automatiquement arrêté. Cependant, il existe également des options permettant de conserver le pod de build.
+Le plugin Jenkins Kubernetes gère toutes les communications de Jenkins vers le cluster Kubernetes.
+De plus, tant que votre cluster Kubernetes évolue, vous pouvez faire évoluer vos agents de build Jenkins sans problème.
+Pour travailler sur cette configuration, nous avons besoin des éléments suivants.
+J’envisage également deux scénarios ici.
+Nous examinerons les deux scénarios et leurs configurations.
+Débordement, voilà ce que nous allons faire.
+Let’s get started with the setup.
+Step 1:Create a namespace calleddevops-tools
+Step 2:Save the following manifest asservice-account.yaml. It contains the role and role-binding for the service account with all the permission to manage pods in thedevops-toolsnamespace.
+Create the service account.
+The next step is to create a Secret, which creates a token for the service account.
+Create a YAML filesecret.yamland copy the below contents into it
+Create the secret
+This creates a secret and links it with the service account using the annotation.
+In this setup, we will have both the Jenkins controller and agents deploying in the same Kubernetes cluster.
+We will set up the Jenkins controller server on the Kubernetes cluster.
+Note:If you have an existing setup, you can use that as well. Ensure it has a service account with permissions to deploy pods in the namespace where Jenkins is deployed.
+Save the following manifest asdeployment.yaml. This manifest contains persistent volume, deployment, and service definitions.
+Note:Ensure that your Kubernetes cluster setup supports persistent volumes. If you deploy Jenkins without a persistent volume, you will lose the Jenkins data on every restart or pod deletion.
+Create the deployment.
+After a couple of minutes, the Jenkins deployment will be up, and you will be able to access any Kubernetes node on the port32000
+Step 4:Access the Jenkins dashboard over the node port and unlock it using the password from the pod logs. Install the suggested plugins and create a Jenkins user.
+Please follow theJenkins on Kubernetes blogif you have any doubts.
+Jenkins Kubernetes pluginis required to set up Kubernetes-based build agents. Let’s configure the plugin.
+Go toManage Jenkins–>Manage Plugins, search for the Kubernetes Plugin in the available tab, and install it. The following Gif video shows the plugin installation process.
+Once installed, go toManage Jenkins–>Clouds
+Click New Cloud
+Give a name and select Kubernetes.
+Click Create and move on to the next step
+Here we have two scenarios.
+Let’s look at configurations for both scenarios.
+Since we have Jenkins inside the Kubernetes cluster with a service account to deploy the agent pods, we don’t have to mention the Kubernetes URL or certificate key.
+However, to validate the connection using the service account, use the Test Connection button as shown below. It should show a connected message if the Jenkins pod can connect to the Kubernetes API Server.
+If your Jenkins server is running outside the Kubernetes cluster, you need to specify the following.
+Note:If you use managed services likeGKE cluster, you can get all the cluser details from the GKE dashboard.
+We have created the service account and assigned a secret token to thedevops-toolsnamespace. We need to get the token from the secret.
+Execute the following commands to retrieve the secret name from the service account.
+Now click theAddbutton under credentials and create a credential type “Secret text“. Enter the service account token in the secret box and add other details as shown below. Finally, save the credential.
+The Kubernetes cloud configuration would look like the following.
+After filling in all the details, you can test the connection to validate the Kubernetes cluster connectivity.
+For the Jenkins Controller running inside the cluster, you can use the Kubernetes cluster’s service endpoint as the Jenkins URL because agent pods can connect to the cluster via internal service DNS.
+The URL is derived using the following syntax.
+In our case, the service DNS will be,
+Also, add the POD label, which can be used to group the containers that can be used for billing or custom build dashboards.
+Note:If the Jenkins controller is outside the Kubernetes cluster, use theJenkins IP or DNSin the Jenkins URL configuration.
+Next, you must add the POD template with the details, as shown in the image below. The label kubeagent will be used as an identifier to pick this pod as the build agent. Next, we must add a container template with the Docker image details.
+The next configuration is the container template. If you don’t add a container template, the Jenkins Kubernetes plugin will use the default JNLP image from the Docker hub to spin up the agents. ie,jenkins/inbound-agent
+If you are on the corporate network and don’t have access to the Docker hub, you will have to build your ownjnlpimage and override the default with the same name as shown below, assumingjenkins/inbound-agent:latestis the custom jnlp image.
+Ensure that you remove thesleepand9999999default argument from the container template.
+We can add multiple container templates to the POD template and use them in the pipeline. I have explained that in the next section withJenkinsfileexamples.
+This is the base minimum configuration required for the agent to work. Later in the pipeline examples, I will explain a few use cases for volumes and other options.
+Now save all the configurations, and let’s test if we can build a job with a pod agent.
+Step 6:Go to Jenkins home –> New Item and create a freestyle project.
+In the job description, add the labelkubeagentas shown below. It is the label we assigned to the pod template. This way, Jenkins knows which pod template to use for the agent container.
+Add a shell build step with an echo command to validate the job as shown below.
+Now, save the job configuration and click “Build Now”
+You should see a pending agent in the job build history below.
+You will see a successful build in a couple of minutes. If you check the logs, the executed shell will be shown.
+Whatever we have seen till now is to understand and validate the Kubernetes Jenkins plugin setup.
+When it comes to actual project pipelines, it is better to have the POD templates in theJenkinsfile
+Here is what you should know about the POD template.
+Here is an exampleJenkinsfilewith a POD template.
+Building the above Jenkinsfile in a pipeline job will use the default JNLP image and execute the commands in the “Run Shell” stage. When I say default, the plugin will use the JNLP image from the docker hub if you don’t specify any.
+Now, you can use your ownjnlpimage using acontainerTemplatewith all necessary build tools and use them in the pipeline as given below.
+Here, instead ofjenkins/inbound-agent:latest, you will have your own image.
+You can use multiple container templates in a single POD template.
+Here is a use case of this setup.
+Let’s say you want to set up a single build pipeline that builds both Java and Python projects. In this case, you can use two container templates in the build stages.
+In the following example, in two separate stages, we are calling two different containers specified in the pod template.
+One container contains all the maven dependencies for Java build, and another contains Python build dependencies.
+You can try building the above Jenkinsfile using the pipeline job.
+While building the above pipeline, if you check the Kubernetes pods, you will see three containers in the build agent pod, as shown below.
+Note: You cannot use the Docker hub images directly due to security compliance issues in actual projects. Sou you have to build your own Docker images and host them in the organization-approved container registry.
+It is better to attach a shared persistent volume to the build container to speed up the build process.
+For example, if you take a Java application, it has many Maven package dependencies.
+When you build the Java apps, it downloads dependencies added in the pom.xml from the remote maven repository the first time, and it creates a local .m2 cache directory where the dependent packages are cached.
+The.m2cache is impossible in Docker agent-based builds as it gets destroyed after the build.
+To solve this issue, we can create a persistent volume for the maven cache and attach it to the agent pod via the container template.
+To demonstrate this, first, let’s create a PVC
+Here is an exampleJenkinsfilewith a POD template that uses themaven-repo-storagepersistent volume.
+If you are using Docker to deploy applications, you can integrate your CI Docker build pipeline with Kubernetes agents.
+There are a few ways torunDocker on Dockerfor build use cases. However, since Kubernetes removed Dockerruntimes, it is better to use alternative solutions.
+For now, the best way to build docker images on the Kubernetes cluster is usingKaniko
+Referbuilding docker image using kanikoto learn more about kaniko build pipeline using Jenkins pipeline.
+If you are using Jenkins & Kubernetes, you should definitely try out the container-based agents.
+Scaling your Jenkins agents on Kubernetes helps you avoid the administrative overhead associated with static build VMs. Even though dynamic VM build options are available, each build could take a long time compared to dynamic container agents.
+You don’t have to worry about running out of resources for Jenkins builds.
+Do give it a try, and let me know if you face any issues.
+Also, check out my comprehensive list ofJenkins tutorials for beginners
+Ce blog traitera de la configuration d'unJenkins hautement disponibleà l'aide de la version open source.
+Avant d’aborder la discussion sur la haute disponibilité, vous devez d’abord comprendre comment Jenkins gère ses données et l’architecture de haut niveau.
+Si vous n'êtes pas au courant de l'architecture, je vous suggère fortement de lire l'articlesur l'architecture de Jenkins.
+Il n’existe aucun moyen direct de configurer Jenkins en mode haute disponibilité en raison de la façon dont Jenkins gère ses données.
+Jenkins gère sesdonnées dans un fichier plat (xml)et vous ne pouvez avoir qu'une seule instance du nœud maître qui peut lire les données Jenkins.
+Pour cette raison, l'exécution de plusieurs répliques dumaître Jenkins dans une configuration active-active(où toutes les répliques traitent activement des tâches) n'est pas officiellement prise en charge.
+Par exemple, si vous essayez de configurer plusieurs nœuds maîtres avec un volume partagé, vous aurez des lectures et des écritures incohérentes qui conduiront à un Jenkins instable.
+Il existe deux façons d'avoir Jenkins en mode HA.
+Vous pouvez appeler cette méthode unesolution de pauvre pour Jenkins HA.Car, lorsqu'une instance tombe en panne, il y a quelques minutes d'indisponibilité pour qu'une autre instance se rétablisse (temps de démarrage de la machine virtuelle + service Java). Mais ça marche 🙂
+Cette méthode fonctionnera sur n’importe quelle plateforme cloud privée/publique avec l’option de mise à l’échelle automatique.
+Cette méthode est similaire audéploiement de Jenkins sur Kubernetes, où si le pod Jenkins tombe en panne, un autre pod générera les mêmes données.
+Au lieu d'un pod, il s'agit d'une machine virtuelle, donc le temps de démarrage prend plus de temps que le lancement d'un nouveau pod.
+Examinons l’architecture de haut niveau de la configuration Jenkins HA à l’aide d’un groupe de mise à l’échelle automatique.
+Ici le concept est assez simple.
+This setup also makes the upgrade and patching process so easy.
+When deployed in Kubernetes, It should be deployed via StatefulSet. Also, wee need to keep the StatefulSet replica as one and the Jenkins data directory should be mounted to the a Persistent Volumeto store Jenkins data (e.g., job history, plugins, configurations).
+This ensures data persists even if the Jenkins master pod is rescheduled or restarted.
+A good news is, you can scale Jenkins agents horizontally.
+There are several ways to scale Jenkins agents. In this method, the agents are dynamically provisioned and terminated once the build is completed.
+For example,
+If you want to try this setup on the AWS cloud, you can use my Documentation.
+I have documented the whole setup for AWS here ->Jenkins HA Setup Using AWS Autoscaling Group
+TheIaCcode for the setup is present in theDevOps ProjectsGithup Repo
+Do try out this setup and see if it works for you.
+Also, you shouldbackup jenkins dataperiodically using plugins and disk snapshots. You can easily restore a working version if you have all the data backup.
+If you are new to Jenkins, check out ourJenkins tutorial for beginners.
+Dans ce blog, vous apprendrez à créer AWS VPC à l'aide de modules Terraform bien structurés. Il s'agit d'un guide étape par étape pour les débutants avec des informations détaillées.
+Pour suivre ce guide, vous devez disposer des éléments suivants.
+Le code AWS VPC Terraform fait partie du  référentielAWS Terraform. Clonez-le sur votre poste de travail pour suivre le guide.
+Forkez et clonez le référentiel si vous avez l'intention de le réutiliser et d'apporter des modifications selon vos besoins.
+Le code Terraform VPC est structuré de la manière suivante.
+varsLe dossier contient le fichier de variables nommévpc.tfvars. C'est le seul fichier qui nécessite une modification
+Lemodules/vpcdossier contient les ressources VPC suivantes. Toute la logique de provisionnement des ressources fait partie de ces ressources.
+Leinfra/vpc/main.tffichier appelle tous lesvpcmodules avec toutes les ressources VPC en utilisant les variables que nous transmettons à l'aide duvpc.tfvarsfichier
+Remarque : le VPC et les sous-réseaux de cette démonstration sont créés sur la base du document de conception VPC.
+Nous allons créer le VPC avec les éléments suivants
+Suivez les étapes ci-dessous pour créer un VPC à l’aide du code Terraform.
+Si vous n'avez pas encore cloné le dépôt, clonez-le à l'aide de la commande suivante.
+Puis accédez au dossier terraform-aws
+Remarque: ouvrez le dossier du référentiel dans votre IDE préféré, car cela facilite l’édition et la révision du code.
+Modifiez levars/dev/vpc.tfvarsfichier selon vos besoins. J'ai mis en évidence les paramètres clés en gras.
+Si vous ne voulez pas de passerelle NAT, définissezcreate_nat_gateway-la sur faux.
+Accédez maintenant au dossierinfra/vpcet exécutez le plan Terraform pour valider les configurations.
+Initialiser Terraform
+Exécuter le plan
+Vous devriez voir une sortie avec toutes les ressources qui seront créées par Terraform.
+Créons le VPC et les ressources associées à l’aide de Terraform Apply.
+Accédez à la console AWS et vérifiez la carte des ressources du VPC.
+Cliquez sur le VPC créé et faites défiler vers le bas pour afficher la carte des ressources.
+Vous devriez voir 15 sous-réseaux, 6 tables de routage, une passerelle Internet et une passerelle NAT comme indiqué ci-dessous.
+Si vous avez créé le VPC à des fins d'apprentissage et que vous souhaitez nettoyer les ressources créées par Terraform, exécutez la commande suivante
+Dans ce guide, nous avons examiné la créationd'Aws VPCà l'aide de Terraform.
+Lors de la mise en œuvre dans des projets réels, vous devrez peut-être envisager davantage d'options VPC, telles que les journaux de flux, les connexions de peering, etc.
+Pour la gestion de l'état, vous devez utiliserun backend distant avec s3avec verrouillage dynamoDB.
+Vous pouvez également modifier le code Terraform en fonction de vos besoins. Si vous souhaitez acquérir plus de connaissances, parcourez chaque ressource du module VPC
+Si vous rencontrez des erreurs ou avez des questions ou des suggestions, laissez un commentaire ci-dessous.
+Dans ce blog, nous examinerons les configurations Kubernetes importantes que chaqueingénieur DevOpsou administrateur Kubernetes doit connaître.
+Vers la fin du guide, j’ai ajouté les configurations impliquées dans une configuration de cluster Kubernetes réelle.
+Remarque: tous les emplacements de configuration référencés dans ce guide sont basés sur l’installation Kubernetes par défaut à l’aidede kubeadm.
+Que vous vous prépariez auxcertifications Kubernetesou que vous envisagiez de travailler sur des projets Kubernetes, il est très important de connaître la configuration clé du cluster Kubernetes.
+De plus, en ce qui concernela certification CKA, vous obtiendrez des scénarios pour corriger les problèmes dans le cluster. Ainsi, la compréhension des configurations du cluster vous permettra de résoudre plus facilement les problèmes et de trouver les problèmes dans le cluster de la bonne manière.
+Commençons par les configurations liées aux composants du plan de contrôle.
+Comme nous l'avons vu dans l'architecture Kubernetes, tous les composants du plan de contrôle sont démarrés par le kubelet à partir des manifestes de pods statiques présents dans le/etc/kubernetes/manifestsrépertoire. Kubelet gère lecycle de vie de tous les podscréés à partir des manifestes de pods statiques.
+Les composants suivants sont déployés à partir des manifestes de pod statiques.
+Vous pouvez obtenir tous les emplacements de configuration de ces composants à partir de ces manifestes de pod.
+Si vous regardez lekube-apiserver.yaml, sous la spécificationdu conteneur,vous pouvez voir tous les paramètres qui pointent vers les certificats TLS et d’autres paramètres requis pour que le serveur API fonctionne et communique avec d’autres composants du cluster.
+Donc, si vous souhaitez dépanner ou vérifier les configurations des composants du cluster, vous devez d’abord examiner les configurations du manifeste du pod statique.
+Si vous souhaitez interagir avec le composant etcd, vous pouvez utiliser les détails du pod statique YAML.
+Par exemple, si vous souhaitezsauvegarder etcd,vous devez connaître le point de terminaison du service etcd et les certificats associés pour vous authentifier auprès d'etcd et créer une sauvegarde.
+Si vous ouvrez leetcd.yamlmanifeste, vous pouvez afficher toutes les configurations liées à etcd comme indiqué ci-dessous.
+In Kubernetes, all the components talk to each other over mTLS. Under the PKI folder, you will find all the TLS certificates and keys. Kubernetes control plane components use these certificates to authenticate and communicate with each other.
+Also, there is an etcd subdirectory that contains the etcd-specific certificates and private keys. These are used to secure communication between etcd nodes and between the API server and etcd nodes.
+The following image shows the file structure of the PKI folder.
+The static pod manifests refer to the required TLS certificates and keys from this folder.
+When you work on a self-hosted cluster using tools like kubeadm, these certificates are automatically generated by the tool. In managed kubernetes clusters, the cloud provider takes care of all the TLS requirements as it is their responsibility to manage control plane components.
+However, if you are setting up a self-hosted cluster for production use, these certificates have to be requested from the organization’s network or security team. They will generate these certificates signed by the organization’s internal Certificate authority and provide them to you.
+Any components that need to authenticate to the API server need thekubeconfig file.
+All the cluster Kubeconfig files are present in the/etc/kubernetesfolder (.conf files). You will find the following files.
+It contains the API server endpoint, cluster CA certificate, cluster client certificate, and other information.
+Theadmin.conf,file, which is the admin kubeconfig file used by end users to access the API server to manage the clusters. You can use this file to connect the cluster from a remote workstation.
+The Kubeconfig for the Controller manager, scheduler, and Kubelet is used for API server authentication and authorization.
+For example, if you check the Controller Manager static pod manifest file, you can see thecontroller-manager.confadded as the authentication and authorization parameter.
+Kubelet service runs as a systems service on all the cluster nodes.
+You can view the kubelet systemd service under/etc/systemd/system/kubelet.service.d
+Here are the system file contents.
+I have highlighted two important kubelet configurations in bold.
+The kubeconfig file will be used for API server authentication and authorization.
+The/var/lib/kubelet/config.yamlcontains all the kubelet-related configurations. The static pod manifest location is added as part of thestaticPodPathparameter.
+/var/lib/kubelet/kubeadm-flags.envfile contains the container runtime environment Linux socket and the infra container (pause container) image.
+For example, here is the kubelet config that is using the CRI-O container runtime, as indicated by the Unix socket and the pause container image.
+A pause container is a minimal container that is the first to be started within a Kubernetes Pod. Then the role of the pause container is to hold the networking namespace and other shared resources for all the other containers in the same Pod.
+If you look at the kubelet configuration in the managed k8s cluster, it looks a little different than the kubeadm setup.
+For example, here is a kubelet service file for anAWS EKS cluster.
+Here you can see the container runtime is containerd and its Unix socket flag is directly added to the service file
+The kubelet kubeconfig file is in a different directory as compared to kubeadm configurations.
+CoreDNSaddon components deal with the cluster DNS configurations.
+All the CoreDNS configurations are part of a configmap named CoreDNS in the kubesystem namespace.
+If you list theConfigmapsin the kube-system namespace, you can see the CoreDNS configmap.
+use the following command to view theCoreDNSconfigmap contents.
+You will see the following contents.
+When it comes to DNS connectivity, applications may need to connect to:
+If you have a use case where you need to have custom DNS servers, for example, the applications in the cluster need to connect to private DNS endpoints in the on-premise data center, you can add the custom DNS server to the core DNS configmap configurations.
+For example, let’s say the custom DNS server IP is10.45.45.34and your DNS suffix isdns-onprem.com, we have to add a block as shown below. So that all the DNS requests related to that domain endpoint will be forwarded to10.45.45.34DNS server.
+Here is the full configmap configuration with the custom block highlighted in bold.
+When it comes to production clusters, audit logging is a must-have feature.
+Audit logging is enabled in thekube-api-server.yamlstatic pod manifest.
+The command argument should have the following two parameters. The file path is arbitrary and it depends on the cluster administrator.
+audit-policy.yamlcontains all the audit policies andaudit.logfile contains the audit logs generated by Kubernetes.
+I have made a video explaining the Kubernetes configuration. You can watch the video on Youtube. Here is the embedded video.
+It is very important to know about kubernetes cluster configuration when working on real-time projects.
+When it comes to self-hosted Kubernetes clusters, which primarily happen in on-premise environments, you need to know each and every configuration of the cluster control plane and the worker nodes.
+Although there are automation tools available to set up the whole cluster, you need to work on the following.
+When it comes to managed kubernetes clusters, you will not have access to the control plane components.
+However, having good knowledge of the cluster configuration would help during implementation and discussions with the cloud support teams to fix cluster-related issues.
+In this guide, we have looked at the important Kubernetes cluster configurations that would help you in Kubernetes cluster administration activities.
+Also, you can check out the detailed blog onProduction Kubernetes cluster activities.
+If you want to level up your kubernetes skills, check out my 40+ comprehensivekubernetes tutorials.
+Dans ce guide, nous explorerons ce que sont les pluginsChatGPTet je vous montrerai comment activer et utiliser les plugins dans ChatGPT.
+Voici ce que dit le site officiel d'OpenAI à propos des plugins ChatGPT.
+Les plugins sont des outils conçus spécifiquement pour les modèles de langage avec la sécurité comme principe de base et aident ChatGPT à accéder à des informations à jour, à exécuter des calculs ou à utiliser des services tiers.
+Pour faire simple :
+Si vous avez un produit et que vous souhaitez que les gens l'utilisent via ChatGPT, vous pouvez créer un plugin avec des spécifications et des normes fournies par OpenAI. ChatGPT acceptera les invites des utilisateurs et utilisera le service hébergé par le plugin correspondant pour fournir les informations ou le service demandés.
+Par exemple, il existe un plugin ChatGPT appelé ChatWithPDF. À l'aide de ce plugin, vous pouvez fournir une URL PDF et ChatGPT peut comprendre ce qu'il contient. Supposons qu'il existe un PDF qui est un livreKubernetes. Vous pouvez fournir une invite indiquant : « Énumérez tous les concepts importants expliqués dans statefulset ».
+À un niveau élevé, voici quelques choses que vous pouvez réaliser avec les plugins ChatGPT. Veuillez noter que les fonctionnalités ne se limitent pas à celles-ci, mais ces exemples devraient vous donner une idée de ce qui peut être fait avec les plugins :
+N'oubliez pas qu'il ne s'agit là que de quelques exemples. Les possibilités offertes par les plugins ChatGPT sont vastes et peuvent être adaptées à vos besoins spécifiques.
+Remarque : vous devez disposer d'un abonnement ChatGPT plus pour activer la fonctionnalité des plugins.
+Vous pouvez activer les plugins ChatGPT en seulement deux étapes.
+Étape 1 :Cliquez sur les trois points dans l’option de profil présente dans le coin inférieur gauche et cliquez sur les options de configuration comme indiqué dans l’image ci-dessous.
+Étape 2 :sélectionnez l’option « Fonctionnalités bêta » et activez le bouton bascule du plug-in comme indiqué ci-dessous.
+Maintenant que nous avons activé les plugins, voyons comment nous pouvons installer un plugin.
+L'installation du plugin est assez simple.
+Étape 1 : Créez une nouvelle discussion et sélectionnez l'option GPT-4. Vous verrez l'option des plugins comme indiqué ci-dessous.
+Étape 2 :Si vous cliquez sur l'option plugins, vous verrez l'option de magasin de plugins. Cliquez dessus pour accéder à tous les plugins disponibles.
+Étape 3 :À partir de la liste des plugins disponibles, vous pouvez installer les plugins requis. Il existe également une barre de recherche dans laquelle vous pouvez rechercher des plugins.
+Les plugins ne sont pris en charge qu'avec GPT-4. Dans la liste déroulante des plugins de l'onglet GPT-4, vous pouvez sélectionner les plugins requis comme indiqué ci-dessous
+Lorsque vous fournissez une invite, ChatGPT utilise le plugin approprié pour vous fournir le résultat.
+Par exemple, si vous avez installé le plugin AskYourPDF et si vous fournissez une invite avec un lien PDF pour résumer le PDF, vous obtiendrez le résumé du PDF.
+Le gif suivant montre la démonstration de l'utilisation d'un plugin avec ChatGPT.
+Il existe également des plugins qui permettent de résumer automatiquement les vidéos YouTube à l'aide de leurs transcriptions. De cette façon, vous n'avez pas besoin d'écouter toutes les vidéos.
+Tout le monde peut créer un plugin ChatGPT. Vous devez suivre les spécifications du plugin d'OpenAPI.
+Voici un diagramme de haut niveau qui montre l'architecture du plugin ChatGPT.
+Les plugins ChatGPT sont parfaits pour améliorer votre expérience avec l'IA générative.
+Il est toutefois essentiel de faire preuve de prudence lors de l’utilisation de ces outils, en particulier avec des données confidentielles ou organisationnelles.
+En effet, les plugins sont des services tiers et ils auront accès à toutes les données que vous leur soumettez. Par conséquent, pour préserver la confidentialité et la sécurité des données, évitez d'utiliser des informations sensibles avec ces applications.
+Je partagerai des idées surl'apprentissage des outils CI/CDet la mise en œuvre des meilleures pratiques dans ce blog.
+Pour les ingénieurs DevOps, apprendre un outil est devenu facile de nos jours avec une documentation prête à l'emploi,ChatGPT, des tutoriels YouTube gratuits et des blogs.
+Cependant, vous pouvez améliorer votre apprentissage en mettant en œuvre les meilleures pratiques et les flux de travail standard du secteur pendant le processus d’apprentissage.
+Il existe de nombreux outils pour le CI/CD. Si vous consultez ma listed'outils DevOps, vous trouverez plus de15 outils pour le CI/CD. Il y en a toujours plus.
+Les principes et les workflows de base du CI/CD restent les mêmes quel que soit votre outil. Chaque outil peut avoir sa propre syntaxe et ses propres configurations pour créer un pipeline.
+Alors, quel est le meilleur outil CI/CD ?
+Vous pouvez débattre toute la journée du meilleur outil. La plupart des outils suivent le même modèle.
+Vous déclarez votre workflow dans Git et l'outil l'exécute. Que ce soit Jenkins, GitHub Actions, Gitlab CI, Circle CI, etc.
+Si vous apprenez correctement un outil, vous pouvez apprendre d’autres outils rapidement.
+Ce blog n'a pas pour vocation de vous proposer un tutoriel sur des outils spécifiques, mais plutôt uneliste de bonnes pratiqueset de workflows. Ainsi, lors du choix des outils à apprendre, vous pouvez suivre ces bonnes pratiques et développer les pipelines.
+En ce qui concerne DevOps, CI/CD s’applique à la fois au code d’application etau code d’infrastructure (IaC).
+Nous devons passer par le processus de test et de révision avant de déployer le code d'application/les codes d'infrastructure dans un environnement.
+Par exemple, le code d’application passe par des tests unitaires, une analyse de code statique, une analyse de vulnérabilité, etc. Nous devons également suivre la même procédure pour le code d’infrastructure.
+J'ai classé les meilleures pratiques sous différents titres. Entrons directement dans le vif du sujet.
+La gestion de la configuration est un aspect essentiel d'un système CI/CD.
+Par exemple, des points de terminaison tels que l'URLNexus, l'URLSonarqube, les points de terminaison du scanner de vulnérabilité, les points de terminaison d'API, etc.
+Utilisez toujours des variables globales pour stocker les points de terminaison et les configurations communes. En cas de changement, il vous suffit de modifier la variable globale au lieu d'effectuer des modifications dans chaque pipeline.
+Tous les outils CI/CD prennent en charge le stockage de variables globales et vous permettent d'accéder aux variables globales dans le pipeline.
+Uber a payé des pirates informatiquespour cacher une violation de données impliquant 57 millions d'utilisateurs.
+Savez-vous comment c'est arrivé ?
+Les pirates ont eu accès auxinformations d'identification AWS enregistrées dans leréférentiel GitHub.
+Chaque système CI/CD doit gérer des secrets. Il peut s'agir de jetons d'API, d'identifiants de base de données, d'identifiants cloud, de jetons de compte de service, etc. Vous devez suivre les principes DevSecOps lorsque vous traitez des secrets pour CI/CD.
+Aucun secret ne doit être codé en dur ou stocké dans le système CI ou Git sous forme de texte brut. Utilisez toujours unsystème de gestion des secretsdans lequel l'outil CI/CD récupère les secrets requis lors de l'exécution.
+Les outils de gestion des secrets offrent différents mécanismes pour accéder aux secrets en cours d'exécution en toute sécurité
+De plus, vous devez vous assurer que les secrets utilisés par les pipelines n'apparaissent pas dans les journaux.
+Hashicorp Vault, AWS secrets manager et Google secret manager sont des exemples de solutions de gestion de secrets externes.
+DRY – « Ne vous répétez pas »
+Dès le début, vous devez travailler àminimiser les doublons de code CI/CD. Un projet peut avoir de nombreux pipelines avec des étapes communes.
+Un tel exemple est une construction Maven.
+Supposons que vous ayez50 servicesqui nécessitent une build Maven et que vousdupliquiezle code pour50 pipelines. Ce n'est pas du tout une solution évolutive.
+Il est donc préférable de développer des bibliothèques ou des workflows communs et de réutiliser les étapes dans les pipelines au lieu de les répéter pour chaque service.
+Par exemple,la bibliothèque partagée Jenkinset les workflows communs GitHub Actions vous permettent de réutiliser les workflows existants pour les pipelines.
+Remarque: il est parfois difficile de développer des modules communs qui répondent à toutes les exigences. Dans ce cas, vous pouvez étendre les modules réutilisables pour répondre aux exigences spécifiques du projet.
+Nous sommes dans l'ère de GitOps.
+Chaque pipeline doit faire partie de Git et être testé pour chaque PR.
+Ne créez pas ou ne déclenchez pas manuellement de pipelines, du moins pendant le développement. Cela entraîne des incohérences et des erreurs humaines. Pour le code d'application et d'infrastructure, chaque PR doit être automatiquement testé avant d'être validé dans les branches (enregistrement bloqué).
+Le déploiement dans des environnements spécifiques tels que la préparation ou la productionpeut nécessiter une intervention manuelle. Cela est principalement dû aux politiques organisationnelles, à la conformité réglementaire ou à la nécessité deprocessus d'approbation spécifiques.
+Par exemple, une modification de code peut nécessiter l’approbation des équipes d’assurance qualité, des équipes de performance, des équipes de sécurité et des parties prenantes de l’entreprise avant d’être déployée dans un environnement de production.
+Lorsque nous utilisons des outils CI/CD dans un réseau ouvert, nous pouvons accéder à toutes les ressources disponibles en ligne, et vous pouvez les télécharger et les utiliser à tout moment.
+However, in real projects, CI/CD tools are set up in a private network behind forward proxies like Squid. You might need approval to download resources from the internet. This will be allowed only for official Linux repositories or dependency managers like Maven.
+Most companies block public container registries like Docker Hub. So when you implement solutions, use private registries and official resources.
+Create libraries and documents so anyone can onboard a new service without the knowledge of the tool.
+Some companies have platform teams who offer these generic templates as part of theInnerSourceefforts.
+And different teams in an organization contribute to the InnerSource to make it better.
+Develop pipeline libraries that everyone in the team understands. Just because you can create a complex library doesn’t mean you have to. Always think from a team perspective.
+For example, you can create a shared library usingJenkins pipelineDSL and pure Groovy code. If your DevOps team needs to gain a skillset to develop in Groovy, you should stick with DSL. Developing in pure Groovy would be an overhead for the team when a change is required.
+Every CI/CD tool has the concept of build agents. To save cost and separation of concerns, it’s good to leverage ephemeral build agents. Meaning the agents get deployed only when needed.
+You can call them dynamic agents or on-demand agents.
+Every build would be running on an agent from a specific template, and it ensures consistency in the build environments.
+The ephemeral agent could be a VM,Docker container, or evenKubernetes pod. Most CI/CD tools support ephemeral agents.
+For example, you can integrate Jenkins with theKubernetes clusterand configure jobs to spin up kubernetes pods as build agents.
+GitHub actions by default support container-based agents or runners.
+En tant qu'ingénieurDevOps, il est essentiel d'apprendre les concepts de base de Git. Dans ce blog, je parlerai deGit pour DevOpset de la raison pour laquelle Git est une compétence importante pour un ingénieur DevOps. J'ai également répertorié les ressources pertinentes pour apprendre Git de la bonne manière.
+Git est un système de contrôle de version distribué open source. Il est très léger et fonctionne sur presque tous les systèmes d'exploitation.
+En 2005, Linus Torvalds a créé git comme système de contrôle de version distribué lorsque l'équipe de développement du noyau Linux ne pouvait plus utiliser BitKeeper gratuitement.
+Git est désormais le système de contrôle de version de facto utilisé par les développeurs du monde entier. Sa nature distribuée facilite le développement, le suivi et la collaboration avec les modifications de code.
+Les résultatsde l’enquête auprès des développeurs StackOverflowprésentés ci-dessous montrent que93 % des ingénieurs utilisent Gitet qu’il s’agit d’un outil fondamental pour eux.
+Quand nous disons git, la plupart des nouveaux apprenants d’aujourd’hui font référence à Github.
+Des plateformes commeGitHub ou Bitbucketsont construites sur Git avec des fonctionnalités supplémentaires qui aident les ingénieurs et les organisations à héberger et à contrôler les versions du code dans le référentiel Git distant. De plus, il est doté de bonnes intégrations pour fonctionner avec d'autres outils CI/CD open source.
+Avec GitHub Actions, vous pouvez configurer l'ensemble du pipeline CI/CD en utilisant les plateformes GitHub et Gitlab elles-mêmes. Cela élimine le besoin de gérer plusieurs outils pour CI/CD.
+Examinons les facteurs clés pour lesquels Git est nécessaire pour DevOps.
+L'une des tâches d'un ingénieur DevOps est deconcevoir et de développer des pipelines CI/CD. Git joue un rôle clé dans le CI/CD. D'après mon expérience de travail dans différentes entreprises, je peux dire qu'il n'existe pas de norme unique pour la ramification et les flux de travail Git. Parfois, vous devez vous asseoir avec les développeurs et discuter de la bonne approche pour la ramification Git dans le pipeline CI/CD. Cela inclut le balisage Git, la gestion des versions, etc.
+En fait, dans la plupart des organisations, les ingénieurs DevOps possèdent et exploitent les référentiels Git.
+Ainsi, pour avoir une discussion significative avec les équipes de développement, vous devez avoir une bonne connaissance de Git.
+De plus, lorsque nous parlons d'infrastructure en tant que code, nous développons et maintenons tout le code d'infrastructure dans Git. Qu'il s'agisse d'unpipeline Jenkins, d'un playbook Ansible ou d'un module Terraform.
+We treat infra code the same way application code is treated. Meaning, infra code goes through the same unit testing and integration tests before getting deployed to any environment.
+It means, even the infrastructure code needs to have a CI/CD pipeline. That again translates to git-based workflows.
+Most companies do not follow test-driven development for infra code, but it is the standard way of developing infrastructure code.
+With technicalpractices like GitOps, git acts as a source of truth for all the infrastructure configurations.
+With Gitops, any change in git repo configs gets deployed in the infrastructure.
+So it is a must for DevOps engineers to know all about git.
+Also, tools like ArgoCD have the whole workflows around gitOps practice.
+Here is the roadmap on how you can learn git.
+If you are looking for guided courses to learn git, I have picked the following best resources to learn git the right way.
+When it comes to DevOps interview questions, it’s more about practical scenarios. So most of the Git devops interview questions will be based on real-time scenarios of the particular project you are getting interviewed for.
+You can learn about the generic git functionalities using the resources I mentioned above. You should be able to answer all the generic git questions.
+However, if you don’t have experience in working with git in real-time projects, I have a solution for you.
+Go toStackoverflow git tag, and browse for specific git topics. For examplegit rebase. It should bring up many real-time scenarios and issues people are facing as shown in the image below.
+You will get a lot of information that can help you in the interviews.
+Another place you can look for is,Reddit Git. Here also you can find many conversations on git that will be helpful for learning and interviews.
+Following are the important git concepts you shouldlearn for DevOps interviews
+Git est un système de contrôle de version simple, mais il existe des outils puissants autour de Git pour l'automatisation DevOps.
+Une fois que vous avez appris les bases, il est préférable de créer vos propres dépôts de code et d'essayer toutes les fonctionnalités avancées de Git. Pour conserver vos connaissances, vous pouvez documenter toutes les fonctionnalités Git que vous avez apprises dans un dépôt Git.
+De plus, si vous souhaitez apprendre Linux, consultez mon guide surla façon d’apprendre les scripts shell Linux.
+Apprendre à utiliser Kubernetespeut sembler compliqué. Il s'agit d'un système d'orchestration de conteneurs complexe dont la courbe d'apprentissage est abrupte. Mais avec la bonne feuille de route et la compréhension des concepts fondamentaux, c'est quelque chose que tout développeur ou responsable des opérations peut apprendre.
+Dans cette feuille de route d’apprentissage de Kubernetes, j’ai ajouté des prérequis et un parcours d’apprentissage complet qui couvre les concepts Kubernetes de base à avancés.
+Avant de vous lancer dans l’apprentissage de Kubernetes, vous devez avoir une bonne connaissance de certaines des technologies et concepts sous-jacents.
+Comprendre l'architecture de Kubernetes n'est pas une tâche facile. Le système comporte de nombreux éléments mobiles qui doivent être compris pour que vous puissiez comprendre ce qui se passe sous la surface. En apprenant l'architecture, vous rencontrerez les concepts que nous abordons dans les prérequis.
+Kubernetes étant un système complexe, il peut être difficile pour les ingénieurs DevOps de comprendre l'architecture de base. À mesure que vous acquerrez de l'expérience pratique, vous serez en mesure de mieux comprendre l'architecture de base.
+Voici ma suggestion.
+Apprenez l'architecture de haut niveau et les composants clésimpliqués dans Kubernetes. Si vous n'êtes pas en mesure de saisir le concept, vous pouvez soit consacrer du temps à faire des recherches supplémentaires sur un sujet spécifique, soit apprendre le concept en faisant des exercices pratiques. C'est votre choix.
+Consultez leguide d'architecture Kubernetespour en savoir plus sur tous les composants Kubernetes en détail.
+Dans l’ensemble, vous devez apprendre ce qui suit.
+Note: For DevOps interviews, ensure you have a very good understanding of Kubernetes architecture and how all the components interact with each other.
+Deploying big clusters on the cloud could be expensive. So make use of the following cloud credits and learn to launch clustersas if you would on a real-time project. This will give you a sense of confidence in the process.
+All platforms offer managed k8s services.
+Use one account at a time. Once the credits have expired. move to the next account. You need to keep a watch on your credits as well as expiry. Or else you could get charged. Also, check the terms and instance usage limits if any.
+Also, setting up servers on this platform is very easy and every cloud provider has extensive documentation to get started.
+ForDevOps engineers, it’s important to understand every component and cluster configuration. While there are many options to deploy a Kubernetes cluster, It is always better to learn to deploy multi-node clusters from scratch.
+With multi-node clusters, you can learn about all the concepts like Cluster security,High Availability, Scaling, Networking, etc.
+It gives you thefeeling of working on a real-world project. It will also help you in interviews and you can be confident about production-level cluster configurations.
+Following are my cluster setup suggestions.
+Once you have a working cluster, you should learn about thekey cluster configurations. This knowledge will be particularly helpful when working in a self-hosted Kubernetes setup.
+Even if you use a managed Kubernetes cluster for your project, there may be certain cluster configurations that you need to modify.
+For example, if you set up a cluster in a hybrid network, you may need to configure it with anon-premises private DNSserver for private DNS resolution. This can be done via CoreDNS configuration.
+Refer to theKubernetes Cluster configurationsguide for more details.
+Also, having a solid understanding of cluster configurations will help you with Kubernetes certifications (CKA & CKS) where you need to troubleshoot cluster misconfiguration and issues.
+Kubeconfigfile is a YAML file that contains all the cluster information and credentials to connect to the cluster.
+As a Devops Engineer, You should learn to connect to kubernetes clusters in different ways using the Kubeconfig file. Because you will be responsible for setting up clusterauthentication for CI/CD systems, providing cluster access to developers, etc.
+So spend some time, understanding the Kubeconfig file structure and associated parameters.
+Check out thecomplete Kubeconfig file guideto learn everything about the Kubeconfig file.
+You will quite often come across the names “Kubernetes Object” and “Kubernetes Resource“
+First, you need to Understand the difference between an object and a resource in kubernetes.
+To put it simply, anything auser creates and persists in Kubernetes is an object. For example, a namespace, pod, Deployment configmap, Secret, etc.
+Before creating an object, you represent it in a YAML or JSON format. It is called anObject Specification (Spec). You declare the desired state of the object on the Object Spec. Once the object is created, you can retrieve its details from the Kubernetes API using Kubectl or client libraries.
+As we discussed earlier in the prerequisite section, everything in Kubernetes is an API. To create different object types, there areAPI endpoints provided by the Kubernetes API server. Thoseobject-specific api-endpoints are called resources. For example, an endpoint to create a pod is called apod resource.
+So when you try to create a Kubernetes Object using Kubectl, it converts the YAML spec to JSON format and sends it to the Pod resource (Pod API endpoint).
+You can refer to theKubernetes objects vs resourceguide for more details.
+Once you have an understanding of Kubernetes Objects and resources, you can start with a native Kubernetes object called Pod. A pod is a basic building block of Kubernetes.
+You should learn all thePod conceptsand their associated objects likeService, Ingress, Persistent Volume, Configmap, and Secret. Once you know everything about a pod, it is very easy to learn other pod-dependent objects like deployments, Daemonset, etc.
+First, learn about the Pod Resource Definition (YAML). A typical Pod YAML contains the following high-level constructs.
+Refer toKubernetes Pod Explainedblog to learn all the basics about Pod.
+Once you have a basic understanding of the above, move on to hands-on learning. These concepts will make more sense when you do hands-on.
+Following are thehands-on tasksto learn about Pod and its associated objects.
+Few advanced pod scheduling concepts.
+Now that you have a better understanding of Pod and independent kubernetes resources, you can start learning about objects that are dependent on the Pod object. While learning this, you will come across concepts like HPA (Horizontal Pod Autoscaling) and VPA (Verification Pod Autoscaling)
+To expose applications to the outside world or end users, kubernetes has a native object called ingress.
+Many engineers get confused with Ingress due to less knowledge of Ingress controllers. Ensure you go through the concept of Ingress and Ingress controllers and understand it correctly. Because it is the base of exposing applications to the outside world.
+You can start with the following comprehensive guides.
+Also, learn about theKubernetes Gateway API. It provides advanced features over Ingress.
+Once you understand the basics of these objects, you can try deploying an end-to-end microservices application on Kubernetes. Start with simple use cases and gradually increase complexity.
+I would suggest you get a domain name and try setting up a microservice application from scratch and host it on your domain.
+You don’t need to develop an application for this. Choose any open-source microservice-based application and deploy it. My suggestion is to choose the open-sourcepet clinic microservice applicationbased on Spring Boot.
+Following are the high-level tasks.
+Security is a key aspect of Kubernetes. There are many ways to implement security best practices in Kubernetes starting from building a secure container image.
+Following the native ways of implementing security in kubernetes.
+The following are the open-source tools you need to look at.
+Now that you have a good understanding of all Kubernetes objects and deploying applications on Kubernetes, you can start learning about Kubernetes configuration management tools.
+When you start working on a real-time project in an organization, you will see the usage of configuration management tools to deploy applications on Kubernetes.
+Because in organizations, there are different environments like dev, stage, pre-prod, and production. You cannot create individual YAML files for each environment and manage them manually. So you need a system to manage Kubernetes YAML configurations effectively.
+Following are the popular and widely adopted Kubernetes tools to manage YAML.
+Kubernetes Operators is an advanced concept.
+To understand operators, first, you need to learn the following Kubernetes concepts.
+To get started with operators, you can try setting the following operators on Kubernetes.
+If you are a Go developer or you want to learn to extend/customize kubernetes, I would suggest youcreate your own operatorusing Golang.
+While learning kubernetes, you might use a cluster in open network connectivity.
+So most of the tasks get executed without any issues. However, this is not the case with clusters set up on corporate networks.
+So, here are some custom cluster configurations you should be aware of
+Following are the resources that might help and add value to the Kubernetes learning process in terms of best practices.
+Following are the list of the best online resource to learn Kubernetes practically.
+The official Kubernetes website has browser-based hands-onkubernetes basic tutorialspowered by Katacoda scenarios. It covers the following.
+You can also look at officialKubernetes tasksto learn to implement Kubernetes concepts practically. It will also help you prepare for Kubernetes certifications.
+DevOpsCube has 35+ comprehensiveKubernetes hands-on tutorialsfor beginners to advanced users. You will learn everything from Kubernetes architecture, Cluster setup, Deployments, best practices, package management, secret management, monitoring, logging, etc.
+If you want to learn Kubernetes from the comfort of your browser,Killercodais a great option. It offers scenario-based learning playgrounds on the browser.
+The full Kubernetes learning guide is added to theKubernetes learning path GitHub repowith links to all the free useful resources.
+This repo is maintained and contributed by community members and it has the following.
+Let’s have a look at some of the best ways to learn Kubernetes.
+You could fall under any of the following categories.
+When I spoke to the DevOps community, I found that a common issue was the lack of real-world experience with Kubernetes. If you don’t have an active Kubernetes project in your organization, you can refer to case studies and learning materials published by organizations that use Kubernetes. This will also help you in Kubernetes interviews.
+Here are some good real-world Kubernetes case studies that can enhance your Kubernetes knowledge:
+Lors de votre apprentissage de Kubernetes, il est préférable de suivre les dernières versions et les nouvelles fonctionnalités de Kubernetes. Je continuerai à mettre à jour les dernières informations sur les versions et la liste des fonctionnalités.
+Dans ce parcours d'apprentissage, j'ai abordé tous les concepts importants dont vous avez besoin pour maîtriser Kubernetes. Je continuerai à ajouter de nouvelles fonctionnalités lorsque les nouvelles versions de Kubernetes seront publiées.
+De plus, l'apprentissage d'une nouvelle compétence technique nécessite des heures de pratique. Vous acquerrez certainement une bonne compréhension de Kubernetes au cours du processus d'apprentissage, mais la vérité est que vous n'arrêtez jamais d'apprendre.
+J'ai commencé mon parcours Kubernetes en 2014 et j'apprends constamment de nouveaux concepts et fonctionnalités.
+Bibin Wilson est un consultant cloud et DevOps avec plus de 10 ans d'expérience en informatique. Il possède une vaste expérience pratique des plateformes de cloud public, de l'hébergement cloud, des déploiements Kubernetes et OpenShift en production. Il est l'auteur de plus de 300 tutoriels techniques, fournissant des informations précieuses à la communauté DevOps. Ses cours sur techiescamp.com offrent des conseils pratiques et des exemples concrets aux professionnels qui souhaitent exceller dans le cloud, DevOps et l'automatisation des infrastructures.
+I would love to lean K8s from you guys do you have instructor led classes? One on one or learn with a group?
+Hi Ozzy,
+We have a CKA course in progress. You can join that to learn administrative aspects of Kubernetes. You can also be a part of a online cohort to preapre for CKA along with learning.
+Beautiful. Thanks Bibin. Great job
+Good Article dear friend !!!
+Thank you for the details article. You have covered all the points.Can you help how to prepare a resume from Docker and K8s perspective?
+Really nice blog. I have started learning DevOps journey and DevOpsCube is one of the best source for DevOps.
+One thing, I’m also planning to start WordPress blog. May I know which plugin did you use for list or any CSS code?
+Your email address will not be published.Required fields are marked*
+Comment*
+Name*
+Email*
+
+
+Δ
+Dans ce didacticiel Kubernetes, vous apprendrez la sauvegarde et la restauration etcd sur un cluster Kubernetes avec un instantané etcd.
+Dans l'architecture Kubernetes, etcd fait partie intégrante du cluster. Tous les objets du cluster et leur état sont stockés dans etcd. Quelques éléments à connaître sur etcd du point de vue de Kubernetes.
+Si vous souhaitez en savoir plus sur etcd et sur la manière dont Kubernetes l'utilise, je vous recommande de lire l'article completsur l'architecture de Kubernetes.
+De plus, si vous considérezles meilleures pratiques de conception de Kubernetes, la sauvegarde et la restauration de Kubernetes etcd sont l’un des aspects importants de la stratégie de sauvegarde.
+Voici ce que vous devez savoir sur la sauvegarde etcd.
+Suivez les étapes ci-dessous pour prendre un instantané etcd.
+Étape 1 :connectez-vous au plan de contrôle.
+Étape 2 :si vous n’avez pas etcdctl dans votre plan de contrôle de cluster, installez-le à l’aide de la commande suivante.
+Étape 3 :nous devons transmettre les trois informations suivantes pouretcdctlprendre un instantané etcd.
+Vous pouvez obtenir les détails ci-dessus de deux manières.
+À partir du fichier manifeste du pod statique etcd situé à/etc/kubernetes/manifests/etcd.yamll’emplacement.
+Vous pouvez également obtenir les détails ci-dessus endécrivant le pod etcd exécutédans l'kube-systemespace de noms.
+Lors de la description du pod, remplacez-leetcd-master-nodepar le nom de votre pod etcd.
+Une autre façon d’afficher plus rapidement les paramètres du serveur etcd consiste à utiliser la commande suivante.
+Choisissez une méthode avec laquelle vous êtes à l’aise pour obtenir les détails du certificat.
+Étape 4 :effectuez une sauvegarde instantanée d’etcd à l’aide de la commande suivante.
+La commande ressemble à ce qui suit lorsque vous ajoutez l'emplacement et les paramètres réels. Exécutez la commande pour effectuer une sauvegarde. Vous pouvez remplacer/opt/backup/etcd.dbpar l'emplacement et le nom de votre choix.
+Lors d'une exécution réussie, vous obtiendrez un message « Snapshot enregistré dans /opt/backup/etcd.db », comme indiqué ci-dessous.
+Also, you can verify the snapshot using the following command.
+Here is an example output.
+Now we have the backup in the/opt/backup/etcd.dblocation. We will use the snapshot backup to restore etcd.
+Here is thecommand to restore etcd.
+Let’s execute the etcd restore command. In my case/opt/backup/etcd.dbis the backup file.
+If you want to use a specific data directory for the restore, you can add the location using the--data-dirflag as shown below.
+After restoring, we need to update the/etc/kubernetes/manifests/etcd.yamlas in the configuration it points to the older path.
+We have now restored the etcd snapshot to a new path so the only change to be made in the YAML file, is to change thehostPathfor the volume calledetcd-datafrom the old directory (/var/lib/etcd) to the new directory (/opt/etcd).
+Edit theetcd.yamland change the volume:
+The etcd pod will be automatically created with new configuration and you would be able to see the previous data.
+Also, if you want to change--data-dirto/opt/etcdin the etcd manifest, make sure that thevolumeMountsforetcd-datais updated as well, with themountPathpointing to/opt/etcd
+To take the etcd backup, you need to the etcdctl command line utility. You need to use the etcdctl snapshot command with the etcd certificates to perform a backup operation.
+In this blog, we learnedKubernetes etcd backup and restoreusingetcdctlcommand line utility.
+etcd backup, and restoreare essential tasks in Kubernetes cluster administration. Also, it is an important topic in the CKA certification exam.
+If you are preparing for the CKA exam, do check out theCKA exam study guideand for the exam discount voucher, check theKubernetes certification coupon.
+Dans ce blog, vous découvrirez ce qu'est EKS Anywhere et commentconfigurer un cluster de développement EKS Anywhereet l'enregistrer sur la console AWS EKS à l'aide du connecteur EKS.
+EKS Anywhere est une fonctionnalité AWSpermettant d'exécuter et de gérer des clusters EKS dans des environnements sur site. Elle simplifie la gestion de Kubernetes sur site et permet une expérience Kubernetes cohérente dans un déploiement Kubernetes multicloud. De plus, vous aurez un contrôle total sur le plan de contrôle et les nœuds de travail.
+EKS Anywhere utiliseAmazon EKS Distro (EKS-D), une distribution Kubernetes personnalisée et open source par AWS. Il s'agit de la même distribution qui alimente EKS géré par AWS. Cela signifie que lorsque vous installez EKS Anywhere, il est fourni avec des paramètres et des configurations optimisés pour AWS.
+Vous pouvez également enregistrer les clusters EKS Anywhere sur la console AWS EKS à l'aide duconnecteur EKS.Une fois le cluster enregistré, vous pouvez visualiser tous les composants du cluster Anywhere dans la console AWS EKS.
+Le connecteur EKSest un Statefulset qui exécute l'agent AWS System Managerdans votre cluster. Il est responsable du maintien de la connexion entre le cluster EKS Anywhere et AWS.
+Voici les principaux cas d’utilisation d’EKS Anywhere :
+Vous pouvez configurer des clusters de développement EKS n'importe où à l'aide de Docker sur les systèmes MAC ou Ubuntu.
+Suivez les étapes ci-dessous pour configurer le cluster de développement EKS Anywhere.
+Accédez auxtéléchargements Dockeret installez le bureau Docker sur MAC. Pour Ubuntu, utilisezce lien pour télécharger le package deb
+Utilisateurs Mac, ouvrez le fichier suivant et remplacezdeprecatedCgroupv1-le par true. Redémarrez ensuite le bureau Docker pour appliquer les modifications.
+Sinon, vous obtiendrez l’erreur suivante.
+Générez la configuration du cluster EKS n'importe où à l'aide de la commande suivante.
+La configuration de votre cluster ressemblerait à ce qui suit.
+Déployez le cluster à l'aide deeksctl. Le provisionnement du cluster prendra un certain temps.
+Vous obtiendrez le résultat suivant après un déploiement de cluster réussi.
+Une fois le cluster créé, vous pouvez voir un dossier nommédev-eks-clusteravec le fichier kubeconfig. Exportons le fichier kubeconfig.
+Remplacez-le/path/topar le chemin absolu de l'emplacement du dossier dev-eks-cluster. Ou consultez leguide du fichier Kubeconfigpour en savoir plus sur l'utilisation pratique du fichier kubeconfig.
+Maintenant, listons les pods dans l'kube-systemespace de noms pour valider le cluster. Vous devriez voir tous les pods en cours d'exécution comme indiqué ci-dessous.
+Maintenant que nous disposons d’un cluster de développement EKS Anywhere en cours d’exécution, nous allons continuer et enregistrer le cluster à l’aide du connecteur EKS.
+Remarque: avant d'enregistrer le cluster, assurez-vous que vous disposez d'une configuration AWS CLI valide avec des privilèges d'administrateur sur votre système. Reportez-vous auguide de configuration AWS CLIpour plus de détails.
+Voici la commande permettant de générer les fichiers YAML de configuration du connecteur EKS. Remplacez la valeur de la région si vous utilisez une autre région.
+La commande ci-dessus crée les trois fichiers YAML suivants. Oùeks-connector.yamlse trouve l'agent de connecteur EKS Statefulset YAML
+Déployons les trois YAML.
+Si vous vous dirigez vers la console AWS EKS, vous devriez voir le cluster nouvellement enregistré comme indiqué ci-dessous.
+Si vous cliquez sur le nom du cluster, vous pouvez afficher toutes les informations et tous les objets du cluster EKS Anywhere exécuté sur votre poste de travail local.
+Voici la démo du connecteur EKS que j'ai ajoutée àla chaîne YouTube DevOpsCube.
+Dans ce guide, nous avons examiné la configuration du cluster de développement Kubernetes EKS Anywhere. Il est assez facile de commencer. Essayez-le.
+De plus, si vous recherchez des clusters de développement Kubernetes légers, consultez montutoriel minikube.
+Si vous apprenez Kubernetes, consultez plus de 30tutoriels pour débutants sur Kubernetes.
+Bibin Wilson est un consultant cloud et DevOps avec plus de 10 ans d'expérience en informatique. Il possède une vaste expérience pratique des plateformes de cloud public, de l'hébergement cloud, des déploiements Kubernetes et OpenShift en production. Il est l'auteur de plus de 300 tutoriels techniques, fournissant des informations précieuses à la communauté DevOps. Ses cours sur techiescamp.com offrent des conseils pratiques et des exemples concrets aux professionnels qui souhaitent exceller dans le cloud, DevOps et l'automatisation des infrastructures.
+Votre adresse email ne sera pas publiée.Les champs obligatoires sont marqués*
+Commentaire*
+Nom*
+E-mail*
+
+
+Δ
