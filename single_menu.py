@@ -13,6 +13,7 @@ from deep_translator import GoogleTranslator
 import requests as rq
 from bs4 import BeautifulSoup as bs
 import pandas as pd
+import re
 
 # # Set up Chrome options
 chrome_options = Options()
@@ -31,10 +32,28 @@ driver = webdriver.Chrome(service=service)
 translator = GoogleTranslator(source='auto', target='fr')
 
 # Open the webpage
-nav_url = "https://devops.com/category/blogs/enterprise-devops/"
+nav_url = "https://devops.com/category/blogs/data-ops/"
 driver.get(nav_url)
 
+# data clean and convert into string
+def clean_and_convert_to_string(data):
+    # Initialize an empty list to store valid HTML strings
+    html_parts = []
 
+    # Iterate through each item in the data
+    for item in data:
+        # Since the items are sets, extract the string from the set
+        # Here, we assume each set contains exactly one string item
+        # Convert the set to a list and get the first element
+        string_item = list(item)[0] if isinstance(item, set) and len(item) == 1 else item
+        
+        # Check if the extracted item is a string
+        if isinstance(string_item, str):
+            # Append to the list of HTML parts
+            html_parts.append(string_item)
+
+    # Join all parts into a single HTML string
+    return ''.join(html_parts)
 
 try:
     # Wait for the overlay to appear and remove it if found
@@ -50,7 +69,7 @@ except TimeoutException:
 count=0
 while True:
     try:
-        if count<2:
+        if count<0:
             # Locate and click the "Show More" button
             link = driver.find_element(By.LINK_TEXT, 'Show More')
             link.click()
@@ -85,19 +104,19 @@ while True:
 
                     content = a_soup.find('div',{"class":"entry-content"})
                     # Initialize lists for storing data
-                    paragraphs = []
-                    current_header = ""
+                    article = []
+                    #current_header = ""
                     element=""
                     main_header_value=a_soup.find("h1",{"class":"entry-title"}).text
                     main_header=translator.translate(main_header_value)
-                    # Loop through the elements and append headers and paragraphs correctly
+                    # Loop through the elements and append headers and article correctly
                     for elem in content.find_all(['h3','h4','li','ol','blockquote', 'p']):
                         if elem.name in ['h3']:
-                            current_header = elem.text.strip()  # Store the latest header
+                            element = elem.text.strip()  # Store the latest header
                             #translate in french
-                            if current_header:
-                                    current_header=translator.translate(current_header)
-                                    current_header="<h3>"+current_header+"</h3>"
+                            if element:
+                                    element=translator.translate(element)
+                                    element="<h3>"+element+"</h3>"
                             else: current_header=''
                         elif elem.name == 'p':
                             element = elem.text.strip()
@@ -138,15 +157,19 @@ while True:
                                     element="<blockquote>"+element+"</blockquote>"
                             else: element=''
 
-                        paragraphs.append({current_header,element})
-                        current_header=''
+                        article.append({element})
+                        #current_header=''
                         element=''
 
-                all_articles.append({"Title":main_header,"Content":paragraphs})
+                resulting_html_string = clean_and_convert_to_string(article)
+                # put all articles in list
+                all_articles.append({"Title":main_header,"Content":resulting_html_string})
+
+                #cleaned_data = clean_data(article)
         
         #data convert into csv
         display_articles = pd.DataFrame(all_articles,columns = ['Title', 'Content'])
-        display_articles.to_csv('Entreprise DevOps.csv',encoding='utf-8',index=False)
+        display_articles.to_csv('DataOps.csv',encoding='utf-8',index=False)
         print("finished")
         
         break  # Exit the loop
