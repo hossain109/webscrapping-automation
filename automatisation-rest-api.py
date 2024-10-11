@@ -5,9 +5,12 @@ import pandas as pd
 import os
 import re
 
-csv_url = "https://raw.githubusercontent.com/hossain109/webscrapping-automation/main/AI.csv"
+csv_url = "https://raw.githubusercontent.com/hossain109/webscrapping-automation/main/Cloud.csv"
 
 df = pd.read_csv(csv_url)
+
+#name of parent category where new category will be created
+parent_cat="DevOps"
 
 # Get the base name (file name with extension)
 file_name_with_ext = os.path.basename(csv_url)
@@ -31,10 +34,10 @@ categories_url = 'http://localhost/wordpress-automation/wp-json/wp/v2/categories
 # Function to get the parent category ID by name
 def get_parent_category_id_by_name(p_category_name):
     response = requests.get(categories_url, headers=headers, params={'search': p_category_name})
-    categories = response.json()
-    
-    if categories:
-        return categories[0]['id']
+    p_categories = response.json()
+
+    if p_categories:
+        return p_categories[0]['id']
     else:
         print(" Parent category not found.")
         return None
@@ -42,11 +45,12 @@ def get_parent_category_id_by_name(p_category_name):
 # Function to get or create category by name
 def get_or_create_child_category(c_category_name):
       #findout parent category
-      parent_id = get_parent_category_id_by_name("DevOps")
+      parent_id = get_parent_category_id_by_name(parent_cat)
+      print(parent_id)
       # Check if the category already exists
       response = requests.get(categories_url, headers=headers, params={'search': c_category_name})
       categories = response.json()
-      
+
       if categories:  # If the category exists, return the ID
             return categories[0]['id']
       
@@ -54,7 +58,7 @@ def get_or_create_child_category(c_category_name):
       new_category_data = {
             'name': category_name,
             'parent': parent_id, #Adding parent category
-            'slug':"devops"+category_name,
+            'slug':"devops-"+category_name,
            'description':"devops"
            }
       response = requests.post(categories_url, headers=headers, data=json.dumps(new_category_data))
