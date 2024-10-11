@@ -32,7 +32,7 @@ driver = webdriver.Chrome(service=service)
 translator = GoogleTranslator(source='auto', target='fr')
 
 # Open the webpage
-nav_url = "https://devops.com/category/blogs/devops-in-the-cloud/"
+nav_url = "https://devops.com/category/blogs/continuous-delivery/"
 driver.get(nav_url)
 
 # data clean and convert into string
@@ -167,7 +167,7 @@ while True:
         
         #data convert into csv
         display_articles = pd.DataFrame(all_articles,columns = ['Title', 'Content'])
-        display_articles.to_csv('Cloud.csv',encoding='utf-8',index=False)
+        display_articles.to_csv('CI-CD.csv',encoding='utf-8',index=False)
         print("finished")
         
         break  # Exit the loop
