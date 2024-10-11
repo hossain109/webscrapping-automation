@@ -5,7 +5,7 @@ import pandas as pd
 import os
 import re
 
-csv_url = "https://raw.githubusercontent.com/hossain109/webscrapping-automation/main/DataOps.csv"
+csv_url = "https://raw.githubusercontent.com/hossain109/webscrapping-automation/main/AI.csv"
 
 df = pd.read_csv(csv_url)
 
