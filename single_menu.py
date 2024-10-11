@@ -105,7 +105,6 @@ while True:
                     content = a_soup.find('div',{"class":"entry-content"})
                     # Initialize lists for storing data
                     article = []
-                    #current_header = ""
                     element=""
                     main_header_value=a_soup.find("h1",{"class":"entry-title"}).text
                     main_header=translator.translate(main_header_value)
@@ -158,7 +157,6 @@ while True:
                             else: element=''
 
                         article.append({element})
-                        #current_header=''
                         element=''
 
                 resulting_html_string = clean_and_convert_to_string(article)

@@ -3,9 +3,8 @@ import base64
 import json
 import pandas as pd
 import os
-import re
 
-csv_url = "https://raw.githubusercontent.com/hossain109/webscrapping-automation/main/Application-Monitoring.csv"
+csv_url = "https://raw.githubusercontent.com/hossain109/webscrapping-automation/main/AI.csv"
 
 df = pd.read_csv(csv_url)
 
@@ -21,6 +20,7 @@ category_name = os.path.splitext(file_name_with_ext)[0]
 username = 'sohrab'
 password = '*Taspiasohrab109*'
 
+
 # Prepare the headers for authentication
 credentials = f"{username}:{password}"
 token = base64.b64encode(credentials.encode())
@@ -35,9 +35,10 @@ categories_url = 'http://localhost/wordpress-automation/wp-json/wp/v2/categories
 def get_parent_category_id_by_name(p_category_name):
     response = requests.get(categories_url, headers=headers, params={'search': p_category_name})
     p_categories = response.json()
-
     if p_categories:
-        return p_categories[0]['id']
+        for p_category in p_categories:
+             if p_category['name'].lower() == parent_cat.lower():
+                  return p_category['id']
     else:
         print(" Parent category not found.")
         return None
@@ -46,7 +47,6 @@ def get_parent_category_id_by_name(p_category_name):
 def get_or_create_child_category(c_category_name):
       #findout parent category
       parent_id = get_parent_category_id_by_name(parent_cat)
-      print(parent_id)
       # Check if the category already exists
       response = requests.get(categories_url, headers=headers, params={'search': c_category_name})
       categories = response.json()
