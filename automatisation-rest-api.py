@@ -3,8 +3,32 @@ import base64
 import json
 import pandas as pd
 import os
+import glob
 
-csv_url = "https://raw.githubusercontent.com/hossain109/webscrapping-automation/main/AI.csv"
+
+#function for collect all csv file
+import glob
+import os
+
+def find_csv_files(directory):
+    # Search for all .csv files recursively
+    csv_files = glob.glob(os.path.join(directory, '**', '*.csv'), recursive=True)
+    print(csv_files)
+    return csv_files
+
+# Path to the cloned repository (this should now be a local path)
+repo_path = './Scrapping'
+
+# Find all CSV files in the repository
+csv_files = find_csv_files(repo_path)
+
+# Print the paths to the found CSV files
+for file in csv_files:
+    print(file)
+
+
+
+csv_url = "https://raw.githubusercontent.com/hossain109/webscrapping-automation/main/Platforme-Engineering.csv"
 
 df = pd.read_csv(csv_url)
 
