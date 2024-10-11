@@ -5,7 +5,7 @@ import pandas as pd
 import os
 import re
 
-csv_url = "https://raw.githubusercontent.com/hossain109/webscrapping-automation/main/AI.csv"
+csv_url = "https://raw.githubusercontent.com/hossain109/webscrapping-automation/main/DataOps.csv"
 
 df = pd.read_csv(csv_url)
 
@@ -29,8 +29,8 @@ headers = {
 categories_url = 'http://localhost/wordpress-automation/wp-json/wp/v2/categories'
 
 # Function to get the parent category ID by name
-def get_parent_category_id_by_name(category_name):
-    response = requests.get(categories_url, headers=headers, params={'search': category_name})
+def get_parent_category_id_by_name(p_category_name):
+    response = requests.get(categories_url, headers=headers, params={'search': p_category_name})
     categories = response.json()
     
     if categories:
@@ -40,11 +40,11 @@ def get_parent_category_id_by_name(category_name):
         return None
 
 # Function to get or create category by name
-def get_or_create_child_category(category_name):
+def get_or_create_child_category(c_category_name):
       #findout parent category
       parent_id = get_parent_category_id_by_name("DevOps")
       # Check if the category already exists
-      response = requests.get(categories_url, headers=headers, params={'search': category_name})
+      response = requests.get(categories_url, headers=headers, params={'search': c_category_name})
       categories = response.json()
       
       if categories:  # If the category exists, return the ID

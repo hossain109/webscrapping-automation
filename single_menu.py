@@ -32,7 +32,7 @@ driver = webdriver.Chrome(service=service)
 translator = GoogleTranslator(source='auto', target='fr')
 
 # Open the webpage
-nav_url = "https://devops.com/category/blogs/data-ops/"
+nav_url = "https://devops.com/category/blogs/ai/"
 driver.get(nav_url)
 
 # data clean and convert into string
@@ -69,7 +69,7 @@ except TimeoutException:
 count=0
 while True:
     try:
-        if count<0:
+        if count<2:
             # Locate and click the "Show More" button
             link = driver.find_element(By.LINK_TEXT, 'Show More')
             link.click()
@@ -164,12 +164,10 @@ while True:
                 resulting_html_string = clean_and_convert_to_string(article)
                 # put all articles in list
                 all_articles.append({"Title":main_header,"Content":resulting_html_string})
-
-                #cleaned_data = clean_data(article)
         
         #data convert into csv
         display_articles = pd.DataFrame(all_articles,columns = ['Title', 'Content'])
-        display_articles.to_csv('DataOps.csv',encoding='utf-8',index=False)
+        display_articles.to_csv('AI.csv',encoding='utf-8',index=False)
         print("finished")
         
         break  # Exit the loop
