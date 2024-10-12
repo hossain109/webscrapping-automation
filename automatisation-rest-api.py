@@ -17,7 +17,7 @@ def find_csv_files(directory):
     return csv_files
 
 # Path to the cloned repository (this should now be a local path)
-repo_path = './Scrapping'
+repo_path = './webscrapping-automation'
 
 # Find all CSV files in the repository
 csv_files = find_csv_files(repo_path)
