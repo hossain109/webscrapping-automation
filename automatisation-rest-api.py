@@ -6,26 +6,16 @@ import os
 import glob
 
 
-#function for collect all csv file
-import glob
-import os
+# Specify the directory where you want to search for CSV files
+directory = 'C:/webscrapping-automation/'  # Replace with your directory path
 
-def find_csv_files(directory):
-    # Search for all .csv files recursively
-    csv_files = glob.glob(os.path.join(directory, '**', '*.csv'), recursive=True)
-    print(csv_files)
-    return csv_files
+# Search for all CSV files in the directory and subdirectories
+csv_files = glob.glob(directory + '/*.csv', recursive=True)
 
-# Path to the cloned repository (this should now be a local path)
-repo_path = './webscrapping-automation'
-
-# Find all CSV files in the repository
-csv_files = find_csv_files(repo_path)
-
-# Print the paths to the found CSV files
-for file in csv_files:
-    print(file)
-
+# Print the names of all CSV files found
+print("CSV Files:")
+for csv_file in csv_files:
+    print(csv_file)
 
 
 csv_url = "https://raw.githubusercontent.com/hossain109/webscrapping-automation/main/Platforme-Engineering.csv"
