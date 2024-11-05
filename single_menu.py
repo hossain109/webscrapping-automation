@@ -21,7 +21,7 @@ chrome_options.add_argument('--ignore-certificate-errors')  # Ignore SSL issues 
 chrome_options.add_argument('--start-maximized')
 
 # Set the path to your ChromeDriver
-chrome_path = r"C:\Scrapping\chromedriver.exe"
+chrome_path = r"C:\webscrapping-automation\chromedriver.exe"
 
 # Create a Service object
 service = Service(chrome_path)
@@ -32,7 +32,7 @@ driver = webdriver.Chrome(service=service)
 translator = GoogleTranslator(source='auto', target='fr')
 
 # Open the webpage
-nav_url = "https://devops.com/category/blogs/devops-culture/"
+nav_url = "https://devops.com/category/blogs/ai/"
 driver.get(nav_url)
 
 # data clean and convert into string
@@ -69,7 +69,7 @@ except TimeoutException:
 count=0
 while True:
     try:
-        if count<2:
+        if count<0:
             # Locate and click the "Show More" button
             link = driver.find_element(By.LINK_TEXT, 'Show More')
             link.click()
@@ -109,7 +109,7 @@ while True:
                     main_header_value=a_soup.find("h1",{"class":"entry-title"}).text
                     main_header=translator.translate(main_header_value)
                     # Loop through the elements and append headers and article correctly
-                    for elem in content.find_all(['h3','h4','li','ol','blockquote', 'p']):
+                    for elem in content.find_all(['h3','h4','li','ol','blockquote', 'p','img']):
                         if elem.name in ['h3']:
                             element = elem.text.strip()  # Store the latest header
                             #translate in french
@@ -155,6 +155,11 @@ while True:
                                     element=translator.translate(element)
                                     element="<blockquote>"+element+"</blockquote>"
                             else: element=''
+                        # elif elem.name == 'svg':
+                        #     #take image source
+                        #     element = elem
+                        #     print(elem)
+                                 
 
                         article.append({element})
                         element=''
@@ -165,7 +170,7 @@ while True:
         
         #data convert into csv
         display_articles = pd.DataFrame(all_articles,columns = ['Title', 'Content'])
-        display_articles.to_csv('DevOps Culture.csv',encoding='utf-8',index=False)
+        display_articles.to_csv('AI.csv',encoding='utf-8',index=False)
         print("finished")
         
         break  # Exit the loop

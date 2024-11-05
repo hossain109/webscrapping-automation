@@ -3,7 +3,6 @@ import base64
 import json
 import pandas as pd
 import os
-import glob
 
 
 # GitHub repository details
@@ -43,7 +42,9 @@ for csv_file in csv_files:
       # Your WordPress credentials
       username = 'sohrab'
       password = '*Taspiasohrab109*'
-
+      # credentialtriboucloud
+      # password="N$GvmlTV*n46Ke*Ks6SyTqDo"
+      # username="Samarah"
 
       # Prepare the headers for authentication
       credentials = f"{username}:{password}"
@@ -53,7 +54,10 @@ for csv_file in csv_files:
       'Content-Type': 'application/json'
       }
 
-      categories_url = 'http://localhost/wordpress-automation/wp-json/wp/v2/categories'
+      #triboucloud category
+      # categories_url='https://blog.tribucloud.com/wp-json/wp/v2/categories'
+      #category wordpressite
+      categories_url='http://localhost/wordpress-automation/wp-json/wp/v2/categories'
 
       # Function to get the parent category ID by name
       def get_parent_category_id_by_name(p_category_name):
@@ -74,7 +78,6 @@ for csv_file in csv_files:
             # Check if the category already exists
             response = requests.get(categories_url, headers=headers, params={'search': c_category_name})
             categories = response.json()
-
             if categories:  # If the category exists, return the ID
                   return categories[0]['id']
             
@@ -83,10 +86,10 @@ for csv_file in csv_files:
                   'name': category_name,
                   'parent': parent_id, #Adding parent category
                   'slug':"devops-"+category_name,
-            'description':"devops"
+                  'description':"devops"
             }
             response = requests.post(categories_url, headers=headers, data=json.dumps(new_category_data))
-      
+            print(response)
             if response.status_code == 201:  # Successfully created category
                   new_category = response.json()
                   return new_category['id']
@@ -98,6 +101,7 @@ for csv_file in csv_files:
       # Iterate over CSV data
       for index, row in df.iterrows():
             category_id = get_or_create_child_category(category_name)
+            #print(category_id)
             #category id exist or not
             if category_id:
                   # Data for creating a post in WordPress
@@ -109,6 +113,8 @@ for csv_file in csv_files:
                   }
 
                   # Send a POST request to WordPress
+                  #response = requests.post('https://blog.tribucloud.com/wp-json/wp/v2/posts', headers=headers, data=json.dumps(post_data))
+                  #send a post resques to perso wordpress
                   response = requests.post('http://localhost/wordpress-automation/wp-json/wp/v2/posts', headers=headers, data=json.dumps(post_data))
 
                   if response.status_code == 201:

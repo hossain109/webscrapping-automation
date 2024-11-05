@@ -23,9 +23,9 @@ driver.get("https://blog.tribucloud.com/ssl-aes256")
 
 
 # Step 1: Read the CSV file
-datas = pd.read_csv("DevSecops.csv")
+datas = pd.read_csv("AI.csv")
 # Get the base name (file name with extension)
-file_name_with_ext = os.path.basename("DevSecops.csv")
+file_name_with_ext = os.path.basename("AI.csv")
 # Get the file name without the extension for category name
 file_name = os.path.splitext(file_name_with_ext)[0]
 
