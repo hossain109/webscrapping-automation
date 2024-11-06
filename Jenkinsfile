@@ -9,12 +9,12 @@ pipeline {
             }
         }
 
-      //   stage('Install Dependencies') {
-      //       steps {
-      //           // Installer les dépendances Python (si le script utilise des packages externes)
-      //           sh 'pip install -r requirements.txt'
-      //       }
-      //   }
+        stage('Install Dependencies') {
+            steps {
+                // Installer les dépendances Python (si le script utilise des packages externes)
+                sh 'python3 -m pip install -r requirements.txt'
+            }
+        }
 
         stage('Run Script') {
             steps {
