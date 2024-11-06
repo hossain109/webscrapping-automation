@@ -40,11 +40,11 @@ for csv_file in csv_files:
       category_name = os.path.splitext(file_name_with_ext)[0]
 
       # Your WordPress credentials
-      username = 'sohrab'
-      password = '*Taspiasohrab109*'
+      # username = 'sohrab'
+      # password = '*Taspiasohrab109*'
       # credentialtriboucloud
-      # password="N$GvmlTV*n46Ke*Ks6SyTqDo"
-      # username="Samarah"
+      password="N$GvmlTV*n46Ke*Ks6SyTqDo"
+      username="Samarah"
 
       # Prepare the headers for authentication
       credentials = f"{username}:{password}"
@@ -55,9 +55,9 @@ for csv_file in csv_files:
       }
 
       #triboucloud category
-      # categories_url='https://blog.tribucloud.com/wp-json/wp/v2/categories'
+      categories_url='https://blog.tribucloud.com/wp-json/wp/v2/categories'
       #category wordpressite
-      categories_url='http://localhost/wordpress-automation/wp-json/wp/v2/categories'
+      # categories_url='http://localhost/wordpress-automation/wp-json/wp/v2/categories'
 
       # Function to get the parent category ID by name
       def get_parent_category_id_by_name(p_category_name):
@@ -113,9 +113,9 @@ for csv_file in csv_files:
                   }
 
                   # Send a POST request to WordPress
-                  #response = requests.post('https://blog.tribucloud.com/wp-json/wp/v2/posts', headers=headers, data=json.dumps(post_data))
+                  response = requests.post('https://blog.tribucloud.com/wp-json/wp/v2/posts', headers=headers, data=json.dumps(post_data))
                   #send a post resques to perso wordpress
-                  response = requests.post('http://localhost/wordpress-automation/wp-json/wp/v2/posts', headers=headers, data=json.dumps(post_data))
+                  # response = requests.post('http://localhost/wordpress-automation/wp-json/wp/v2/posts', headers=headers, data=json.dumps(post_data))
 
                   if response.status_code == 201:
                         print(f"Post created successfully for row {index}")
