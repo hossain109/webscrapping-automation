@@ -16,7 +16,6 @@ pipeline {
                 sh '. venv/bin/activate && python3 -m pip install -r requirements.txt'
             }
         }
-
         stage('Run Script') {
             steps {
                 // Exécuter le script Python avec les variables d'environnement appropriées
