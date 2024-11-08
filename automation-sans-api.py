@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import os
 
 # Set the path to your ChromeDriver
-chrome_path = "C:/Scrapping/chromedriver.exe"
+chrome_path = "C:/webscrapping-automation/chromedriver.exe"
 
 # Create a Service object
 service = Service(chrome_path)
@@ -23,9 +23,9 @@ driver.get("https://blog.tribucloud.com/ssl-aes256")
 
 
 # Step 1: Read the CSV file
-datas = pd.read_csv("AI.csv")
+datas = pd.read_csv("CI-CD.csv")
 # Get the base name (file name with extension)
-file_name_with_ext = os.path.basename("AI.csv")
+file_name_with_ext = os.path.basename("CI-CD.csv")
 # Get the file name without the extension for category name
 file_name = os.path.splitext(file_name_with_ext)[0]
 
@@ -38,16 +38,16 @@ username="Samarah"
 
 
 #define a function for wordpress article content
-def clean_for_wordpress(content):
-    # Remove unnecessary characters like {}, '' and double quotes surrounding the tags
-    cleaned_content = re.sub(r'[{}\[\]""\'\']', '', content)
+# def clean_for_wordpress(content):
+#     # Remove unnecessary characters like {}, '' and double quotes surrounding the tags
+#     cleaned_content = re.sub(r'[{}\[\]""\'\']', '', content)
 
-    # Remove commas
-    cleaned_content = cleaned_content.replace(',', '')
-    # Optional: Strip any excess whitespace
-    cleaned_content = cleaned_content.strip()
+#     # Remove commas
+#     cleaned_content = cleaned_content.replace(',', '')
+#     # Optional: Strip any excess whitespace
+#     cleaned_content = cleaned_content.strip()
     
-    return cleaned_content
+#     return cleaned_content
 
 def login():
     usernamebox = driver.find_element(by=By.ID,value="user_login")
@@ -143,9 +143,9 @@ if len(datas)!=None:
     for index in range(0,len(datas)):
         title = datas["Title"][index]
         #clean data with function
-        cleaned_content = clean_for_wordpress(datas["Content"][index])
-        content=cleaned_content
-
+        # cleaned_content = clean_for_wordpress(datas["Content"][index])
+        # content=cleaned_content
+        content=datas["Content"][index]
         try:
             displayname = driver.find_element(by=By.CLASS_NAME,value="display-name")
             if(displayname.text==username):

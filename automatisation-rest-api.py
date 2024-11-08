@@ -1,9 +1,16 @@
 import requests
+# from requests.auth import HTTPBasicAuth
+import urllib3
+from urllib3.exceptions import InsecureRequestWarning
 import base64
 import json
 import pandas as pd
 import os
+import time
+import certifi
 
+# Disable SSL warnings temporarily
+urllib3.disable_warnings(InsecureRequestWarning)
 
 # GitHub repository details
 owner = "hossain109"  # Replace with the GitHub username
@@ -57,11 +64,11 @@ for csv_file in csv_files:
       #triboucloud category
       categories_url='https://blog.tribucloud.com/wp-json/wp/v2/categories'
       #category wordpressite
-      # categories_url='http://localhost/wordpress-automation/wp-json/wp/v2/categories'
+      #categories_url='http://localhost/wordpress-automation/wp-json/wp/v2/categories'
 
       # Function to get the parent category ID by name
       def get_parent_category_id_by_name(p_category_name):
-            response = requests.get(categories_url, headers=headers, params={'search': p_category_name})
+            response = requests.get(categories_url, headers=headers, params={'search': p_category_name}, verify=certifi.where())
             p_categories = response.json()
             if p_categories:
                   for p_category in p_categories:
@@ -76,7 +83,7 @@ for csv_file in csv_files:
             #findout parent category
             parent_id = get_parent_category_id_by_name(parent_cat)
             # Check if the category already exists
-            response = requests.get(categories_url, headers=headers, params={'search': c_category_name})
+            response = requests.get(categories_url, headers=headers, params={'search': c_category_name}, verify=certifi.where())
             categories = response.json()
             if categories:  # If the category exists, return the ID
                   return categories[0]['id']
@@ -88,7 +95,7 @@ for csv_file in csv_files:
                   'slug':"devops-"+category_name,
                   'description':"devops"
             }
-            response = requests.post(categories_url, headers=headers, data=json.dumps(new_category_data))
+            response = requests.post(categories_url, headers=headers, data=json.dumps(new_category_data),verify=certifi.where())
             print(response)
             if response.status_code == 201:  # Successfully created category
                   new_category = response.json()
@@ -113,9 +120,9 @@ for csv_file in csv_files:
                   }
 
                   # Send a POST request to WordPress
-                  response = requests.post('https://blog.tribucloud.com/wp-json/wp/v2/posts', headers=headers, data=json.dumps(post_data))
+                  response = requests.post('https://blog.tribucloud.com/wp-json/wp/v2/posts', headers=headers, data=json.dumps(post_data), verify=certifi.where())
                   #send a post resques to perso wordpress
-                  # response = requests.post('http://localhost/wordpress-automation/wp-json/wp/v2/posts', headers=headers, data=json.dumps(post_data))
+                  #response = requests.post('http://localhost/wordpress-automation/wp-json/wp/v2/posts', headers=headers, data=json.dumps(post_data))
 
                   if response.status_code == 201:
                         print(f"Post created successfully for row {index}")
